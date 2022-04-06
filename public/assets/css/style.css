@@ -114,21 +114,16 @@ img {
 /*------------------------------------------------------------
 footer
 ------------------------------------------------------------*/
-.c-footer {
-  padding: 20px 20px;
-  background: #051a2b;
-  color: #fff;
-  text-align: center;
-}
-
 /* Breadcrumb
 ------------------------------------------------------------*/
 /* layout
 ------------------------------------------------------------*/
 body {
   font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
-  font-size: 1.4rem;
-  min-width: 1000px;
+  font-size: 1.2rem;
+  min-width: 320px;
+  max-width: 768px;
+  margin: 0 auto;
   line-height: 1.5;
 }
 
@@ -141,6 +136,86 @@ body {
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Component .c-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
+.c-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 15px;
+  border-bottom: 2px solid #d5d5d5;
+}
+
+.c-header__menu {
+  z-index: 1;
+  background: red;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+}
+
+.menu-trigger {
+  position: relative;
+  z-index: 101;
+  width: 44px;
+  height: 25px;
+  background: none;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  border-radius: 4px;
+}
+
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+  top: 11px;
+}
+
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+.menu-trigger.active span:nth-of-type(1) {
+  transform: translateY(11px) rotate(-45deg);
+}
+
+.menu-trigger.active span:nth-of-type(2) {
+  left: 50%;
+  opacity: 0;
+  animation: active-menu-bar02 .8s forwards;
+}
+
+.menu-trigger.active span:nth-of-type(3) {
+  transform: translateY(-11px) rotate(45deg);
+}
+
+@keyframes active-menu-bar02 {
+  100% {
+    height: 0;
+  }
+}
+
 /*------------------------------------------------------------
 other
 ------------------------------------------------------------*/
@@ -152,17 +227,9 @@ other
 /*------------------------------------------------------------
 Css of home page
 ------------------------------------------------------------*/
-.p-top {
-  line-height: 2;
-}
-
 /*------------------------------------------------------------
 Css of home page
 ------------------------------------------------------------*/
-.p-about {
-  line-height: 2;
-}
-
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Utility .u-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
