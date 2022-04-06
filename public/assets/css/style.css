@@ -114,21 +114,17 @@ img {
 /*------------------------------------------------------------
 footer
 ------------------------------------------------------------*/
-.c-footer {
-  padding: 20px 20px;
-  background: #051a2b;
-  color: #fff;
-  text-align: center;
-}
-
 /* Breadcrumb
 ------------------------------------------------------------*/
 /* layout
 ------------------------------------------------------------*/
 body {
-  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
-  font-size: 1.4rem;
-  min-width: 1000px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  min-width: 320px;
+  max-width: 768px;
+  margin: 0 auto;
   line-height: 1.5;
 }
 
@@ -141,6 +137,62 @@ body {
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Component .c-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
+.c-loading {
+  position: fixed;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+}
+
+.c-loading__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.c-loading__text h2 {
+  font-size: 2.2rem;
+}
+
+.c-loading__text h3 {
+  font-size: 1.6rem;
+}
+
+.c-loading__logo {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  max-width: 20%;
+}
+
+.c-loading__logo img {
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  transform-style: preserve-3d;
+}
+
+/* WebKit and Opera browsers */
+
+/* all other browsers */
+@keyframes spinner {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
 /*------------------------------------------------------------
 other
 ------------------------------------------------------------*/
@@ -152,17 +204,9 @@ other
 /*------------------------------------------------------------
 Css of home page
 ------------------------------------------------------------*/
-.p-top {
-  line-height: 2;
-}
-
 /*------------------------------------------------------------
 Css of home page
 ------------------------------------------------------------*/
-.p-about {
-  line-height: 2;
-}
-
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Utility .u-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
