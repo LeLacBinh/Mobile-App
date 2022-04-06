@@ -3,4 +3,5 @@ $(document).ready(function() {
     $(".menu-trigger").click(function() {
         $(this).toggleClass('active');
     })
+    $('.c-loading').fadeOut(1000)
 })
