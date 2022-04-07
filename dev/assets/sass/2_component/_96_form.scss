@@ -1,0 +1,15 @@
+.c-input {
+    width: 100%;
+    outline: none;
+    border: 1px solid $silver;
+    color: $silver;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    &--select {
+        min-height: 40px;
+    }
+    &--textarea {
+        min-height: 200px;
+    }
+}
