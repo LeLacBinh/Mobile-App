@@ -1,0 +1,48 @@
+.c-product {
+    &__img {
+        width: 100px;
+        height: auto;
+        img {
+            object-fit: cover;
+        }
+    }
+    &__point {
+        display: inline-block;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #fff;
+        padding: 0px 15px;
+        background: $pink-bold;
+    }
+    &__content {
+        flex: 1;
+        padding: 0 15px;
+    }
+    &__name {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+    &__desc {
+        margin-top: 8px;
+        color: silver;
+    }
+    ;
+    &__more {
+        padding-right: 7px;
+    }
+    &__path {
+        margin-top: 15px;
+        display: block;
+        color: $pink-bold;
+    }
+    &__item {
+        margin-bottom: 10px;
+        background-color: #fff;
+        border: 1px solid #d8d8d8;
+        padding: 3px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
