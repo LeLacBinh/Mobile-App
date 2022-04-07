@@ -36,6 +36,10 @@
         background-color: #fff;
         color: $pink;
     }
+    &--red{
+        background-color: #b64f54;
+        color:white
+    }
     &--quesblue {
         color: #fff;
         padding: 20px 15px;
@@ -76,8 +80,4 @@
     font-weight: bold;
     color: #fff;
     padding: 8px 35px;
-    &--red{
-        background-color: #b64f54;
-        color:white
-    }
 }
