@@ -329,6 +329,28 @@ body {
   box-shadow: 3px 4px 7px #919191;
 }
 
+.c-btnprev {
+  margin: 0 5px;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  background-color: #fff;
+  border: 1px solid #cecece;
+  font-weight: bold;
+  color: #7f7f7f;
+  padding: 8px 35px;
+}
+
+.c-btnnext {
+  margin: 0 5px;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  background-color: #4f65a2;
+  border: 1px solid #cecece;
+  font-weight: bold;
+  color: #fff;
+  padding: 8px 35px;
+}
+
 .c-loading {
   position: fixed;
   position: relative;
@@ -549,6 +571,55 @@ body {
 
 .c-question__btn .c-btn + .c-btn {
   margin-top: 40px;
+}
+
+.c-question__body {
+  min-height: calc(100vh - 113px);
+  padding: 4%;
+}
+
+.c-question__progress {
+  text-align: center;
+}
+
+.c-question__progress__text {
+  margin-bottom: 5px;
+}
+
+.c-question__progress__percent {
+  height: 15px;
+  width: 100%;
+  border: 1px solid #c2c2c2;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.c-question__progress__percent span {
+  display: block;
+  position: absolute;
+  top: -1px;
+  border-radius: 20px;
+  height: 15px;
+  left: 0;
+  background: #4f65a2;
+}
+
+.c-question__heading {
+  font-size: 1.8rem;
+  margin: 10px 0 10px;
+}
+
+.c-question__item {
+  padding-left: 10px;
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+}
+
+.c-question__control {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .c-exchange {
