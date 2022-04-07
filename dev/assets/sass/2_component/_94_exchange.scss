@@ -1,0 +1,26 @@
+.c-exchange {
+    min-height: 100vh;
+    background: #eae4ec;
+    &__header {
+        background: #fff;
+        padding: 30px 21px;
+        display: flex;
+        justify-content: space-between;
+        &__current {
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
+        &__point {
+            font-weight: bold;
+            color: $pink-bold;
+            font-size: 1.6rem;
+            span {
+                font-size: 2rem;
+            }
+        }
+    }
+    &__body {
+        padding: 4%;
+        padding-bottom: 60px;
+    }
+}

@@ -1,5 +1,6 @@
 // Header
 .c-header {
+    background: #fff;
     padding: 15px 0;
     max-width: 768px;
     width: 100%;
@@ -13,7 +14,7 @@
         height: 100%;
         position: fixed;
         top: -100%;
-        z-index: 101;
+        z-index: 90;
         background: #4f65a2;
         transition: all 0.2s linear;
         opacity: 0;

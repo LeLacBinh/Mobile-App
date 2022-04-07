@@ -178,10 +178,6 @@ body {
   padding: 0 10px;
 }
 
-main {
-  padding-top: 53px;
-}
-
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Component .c-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
@@ -287,9 +283,96 @@ main {
   }
 }
 
+.c-product__img {
+  width: 100px;
+  height: auto;
+}
+
+.c-product__img img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.c-product__point {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 0px 15px;
+  background: #a3124f;
+}
+
+.c-product__content {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.c-product__name {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.c-product__desc {
+  margin-top: 8px;
+  color: silver;
+}
+
+.c-product__more {
+  padding-right: 7px;
+}
+
+.c-product__path {
+  margin-top: 15px;
+  display: block;
+  color: #a3124f;
+}
+
+.c-product__item {
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  padding: 3px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-exchange {
+  min-height: 100vh;
+  background: #eae4ec;
+}
+
+.c-exchange__header {
+  background: #fff;
+  padding: 30px 21px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-exchange__header__current {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.c-exchange__header__point {
+  font-weight: bold;
+  color: #a3124f;
+  font-size: 1.6rem;
+}
+
+.c-exchange__header__point span {
+  font-size: 2rem;
+}
+
+.c-exchange__body {
+  padding: 4%;
+  padding-bottom: 60px;
+}
+
 .c-post__item {
   position: relative;
-  margin-top: 12px;
+  margin-bottom: 12px;
   padding: 10px;
   background: #fff;
   border: 1px solid #d8d8d8;
@@ -405,6 +488,7 @@ main {
 }
 
 .c-header {
+  background: #fff;
   padding: 15px 0;
   max-width: 768px;
   width: 100%;
@@ -420,7 +504,7 @@ main {
   height: 100%;
   position: fixed;
   top: -100%;
-  z-index: 101;
+  z-index: 90;
   background: #4f65a2;
   transition: all 0.2s linear;
   opacity: 0;
@@ -687,6 +771,7 @@ Css of home page
 .p-history__body {
   min-height: 100vh;
   padding: 4%;
+  padding-bottom: 60px;
   background: #f7f7f7;
 }
 
