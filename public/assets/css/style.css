@@ -174,6 +174,10 @@ body {
   }
 }
 
+.l-container {
+  padding: 0 10px;
+}
+
 main {
   padding-top: 53px;
 }
@@ -217,6 +221,7 @@ main {
   width: 100%;
   height: 100vh;
   z-index: 100;
+  background-color: white;
 }
 
 .c-loading__text {
@@ -475,6 +480,136 @@ other
 /*------------------------------------------------------------
 Css of home page
 ------------------------------------------------------------*/
+.p-top1 {
+  background-color: #262626;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.p-top1 h1 {
+  font-size: 2.2rem;
+}
+
+.p-top1 h1 span {
+  color: #d20000;
+}
+
+.p-top2 .col-4 {
+  color: #b64f54;
+  margin-bottom: 20px;
+}
+
+.p-top2 .col-4:nth-child(2) {
+  color: #8cbdad;
+}
+
+.p-top2 .col-4:nth-child(2) .p-top2__image {
+  border-color: #8cbdad;
+}
+
+.p-top2 .col-4:nth-child(3) {
+  color: #bebe6b;
+}
+
+.p-top2 .col-4:nth-child(3) .p-top2__image {
+  border-color: #bebe6b;
+}
+
+.p-top2 .col-4:nth-child(4) {
+  color: #467597;
+}
+
+.p-top2 .col-4:nth-child(4) .p-top2__image {
+  border-color: #467597;
+}
+
+.p-top2 .col-4:nth-child(5) {
+  color: #dba165;
+}
+
+.p-top2 .col-4:nth-child(5) .p-top2__image {
+  border-color: #dba165;
+}
+
+.p-top2 .col-4:nth-child(6) {
+  color: #9c83a4;
+}
+
+.p-top2 .col-4:nth-child(6) .p-top2__image {
+  border-color: #9c83a4;
+}
+
+.p-top2 .col-4:nth-child(7) {
+  color: #a75d76;
+}
+
+.p-top2 .col-4:nth-child(7) .p-top2__image {
+  border-color: #a75d76;
+}
+
+.p-top2 .col-4:nth-child(8) {
+  color: #5e72a8;
+}
+
+.p-top2 .col-4:nth-child(8) .p-top2__image {
+  border-color: #5e72a8;
+}
+
+.p-top2 .col-4:nth-child(9) {
+  color: #5a666f;
+}
+
+.p-top2 .col-4:nth-child(9) .p-top2__image {
+  border-color: #5a666f;
+}
+
+.p-top2__item {
+  width: 80%;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.p-top2__item p {
+  margin-top: 15px;
+}
+
+.p-top2__image {
+  border: 2px solid #b64f54;
+  border-radius: 50%;
+  position: relative;
+}
+
+.p-top2__image::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.p-top2__image img {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.p-top2__btn {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.p-top2__btn a {
+  display: block;
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  border: 2px solid #e1e5e7;
+  background-color: #e1e5e7;
+}
+
 /*------------------------------------------------------------
 Css of home page
 ------------------------------------------------------------*/
