@@ -284,6 +284,32 @@ body {
   }
 }
 
+.c-search {
+  position: relative;
+}
+
+.c-search input {
+  width: 100%;
+  padding: 8px 5px;
+  padding-left: 30px;
+  border-radius: 5px;
+  border: 1px solid #dadada;
+  color: #dadada;
+  font-size: 1.2rem;
+}
+
+.c-search::before {
+  position: absolute;
+  content: '\f002';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.2rem;
+  left: 15px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #c2c2c4;
+}
+
 .c-product__img {
   width: 100px;
   height: auto;
@@ -805,6 +831,60 @@ Css of home page
 .p-news__row h4 {
   font-size: 1.8rem;
   font-weight: normal;
+}
+
+.p-message1 .container {
+  padding: 20px 15px;
+  background-color: #d5d5d5;
+}
+
+.p-message2 dt {
+  background-color: #f5f5f5;
+  color: #99999e;
+  padding: 5px 10px;
+  font-size: 1.4rem;
+}
+
+.p-message2 dd:not(:last-child) {
+  border-bottom: 1px solid #eaebeb;
+}
+
+.p-message2 dd a {
+  display: block;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.p-message2 dd h4, .p-message2 dd h5 {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.p-message2 dd h5 {
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.p-message2 dd p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.p-message2 dd.unread h5 {
+  font-weight: bold;
+  color: #f78f06;
+}
+
+.p-message2 dd.unread h5::after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #f78f06;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 5px;
 }
 
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡

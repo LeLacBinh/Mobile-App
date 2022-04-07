@@ -1,0 +1,23 @@
+.c-search{
+    position: relative;
+    input{
+        width: 100%;
+        padding: 8px 5px;
+        padding-left: 30px;
+        border-radius: 5px;
+        border: 1px solid #dadada;
+        color: #dadada;
+        font-size: 1.2rem;
+    }
+    &::before{
+        position: absolute;
+        content: '\f002';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 1.2rem;
+        left: 15px;
+        top: 50%;
+        transform: translate(-50% , -50%);
+        color: #c2c2c4;
+    }
+}
