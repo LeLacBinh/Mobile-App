@@ -1,4 +1,5 @@
 .c-product {
+    padding: 4%;
     &__img {
         width: 100px;
         height: auto;
@@ -44,5 +45,80 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+}
+
+.c-productdetail {
+    padding: 4%;
+    &__inner {
+        border-radius: 8px;
+        border: 1px solid #d8d8d8;
+    }
+    &__body {
+        border-radius: 8px;
+        background-color: #fff;
+        padding: 3px;
+    }
+    &__cover {
+        overflow: hidden;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+    &__title {
+        padding: 15px 5px;
+        border-bottom: 1px solid #d8d8d8;
+        h3 {
+            padding-left: 15px;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+    }
+    &__description {
+        min-height: 110px;
+        padding: 10px 5px;
+        border-bottom: 1px solid #d8d8d8;
+        p {
+            padding: 0 15px;
+        }
+        &__heading {
+            padding: 0 15px;
+            color: $silver;
+        }
+    }
+    &__exchange {
+        min-height: 150px;
+        padding: 10px 5px;
+        p {
+            padding: 0 15px;
+        }
+        &__heading {
+            font-size: 1.2rem;
+            padding: 0 15px;
+            color: $silver;
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        padding: 12% 20px 13px;
+        background-image: url('../img/coupon.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    &__point {
+        display: inline-block;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #fff;
+        padding: 0px 15px;
+        background: $pink-bold;
+    }
+    &__text {
+        padding-right: 30px;
+        font-size: 2rem;
+        font-weight: bold;
+        color: $pink-bold;
     }
 }

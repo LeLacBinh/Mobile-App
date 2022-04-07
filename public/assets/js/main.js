@@ -1,8 +1,8 @@
 $(document).ready(function() {
     //Add padding top
     $('main').css({
-        'padding-top' : $('.c-header').outerHeight(),
-        'padding-bottom' : $('.c-footer').outerHeight()
+        'padding-top': $('.c-header').outerHeight(),
+        'padding-bottom': $('.c-footer').outerHeight()
     })
 
     // Header icon click
@@ -14,7 +14,11 @@ $(document).ready(function() {
         //Add padding top
     $('main').css('padding-top', $('.c-header').outerHeight())
     $('main').css('padding-top', $('.c-headerv2').outerHeight())
+<<<<<<< HEAD
     setTimeout(function(){
         $('.c-loading').fadeOut(1000);
     },1000)
+=======
+    $('.c-loading').fadeOut(1000);
+>>>>>>> hung_master
 })
