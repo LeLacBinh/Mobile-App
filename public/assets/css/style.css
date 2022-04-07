@@ -351,6 +351,11 @@ body {
   padding: 8px 35px;
 }
 
+.c-btn--red {
+  background-color: #b64f54;
+  color: white;
+}
+
 .c-loading {
   position: fixed;
   width: 100%;
@@ -438,6 +443,65 @@ body {
 .c-product {
   padding: 4%;
 >>>>>>> hung_master
+}
+
+.c-infor {
+  border: 2px solid #e2e2e2;
+  padding: 15px;
+}
+
+.c-infor__image {
+  height: 40vw;
+  min-height: 90px;
+  max-height: 250px;
+}
+
+.c-infor__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.c-infor__text {
+  padding-left: 15px;
+}
+
+.c-infor__text h4 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.c-infor__text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.c-infor__text ul li {
+  display: flex;
+  align-items: baseline;
+}
+
+.c-infor__text ul li p {
+  font-size: 1.3rem;
+  width: 60%;
+  margin-bottom: 0;
+}
+
+.c-infor__text ul li p:first-child {
+  padding-right: 20px;
+  position: relative;
+  width: 40%;
+  text-align: right;
+}
+
+.c-infor__text ul li p:first-child::after {
+  content: '▶';
+  font-size: 0.8rem;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(50%, -50%);
 }
 
 .c-product__img {
@@ -1174,6 +1238,92 @@ Css of home page
   border-radius: 50%;
   vertical-align: middle;
   margin-left: 5px;
+}
+
+.p-point1 {
+  margin-top: 20px;
+}
+
+.p-point2 {
+  margin-top: 40px;
+}
+
+.p-point2__box {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.p-point2__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b64f54;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #b64f54;
+}
+
+.p-point2__title img {
+  max-width: 30px;
+  margin-right: 10px;
+}
+
+.p-point2__title h3 {
+  font-size: 2rem;
+}
+
+.p-point2__content ul {
+  margin-top: 20px;
+}
+
+.p-point2__content li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.p-point2__content li .col h4 {
+  font-size: 2rem;
+  color: #b64f54;
+}
+
+.p-point2__content li .col:first-child h4 {
+  font-weight: normal;
+  text-align: right;
+}
+
+.p-point2__content li .col:last-child h4 {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.p-point2__content li .col:last-child h4 span {
+  font-size: 2rem;
+}
+
+.p-point2__btn1, .p-point2__btn2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.p-point2__btn1 {
+  margin-top: 40px;
+}
+
+.p-point2__btn1 .c-btn {
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-point2__btn2 {
+  margin-top: 15px;
+}
+
+.p-point2__btn2 .c-btn {
+  border-radius: 5px;
+  font-size: 1.8rem;
 }
 
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡

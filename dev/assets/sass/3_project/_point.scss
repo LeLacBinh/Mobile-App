@@ -1,0 +1,83 @@
+.p-point{
+    &1{
+        margin-top: 20px;
+    }
+    &2{
+        margin-top: 40px;
+        &__box{
+            width: 90%;
+            margin: 0 auto;
+        }
+        &__title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #b64f54;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #b64f54;
+            img{
+                max-width: 30px;
+                margin-right: 10px;
+            }
+            h3{
+                font-size: 2rem;
+            }
+        }
+        &__content{
+            ul{
+                margin-top: 20px;
+            }
+            li{
+                &:not(:last-child){
+                    margin-bottom: 15px;
+                }
+                .col{
+                    h4{
+                        font-size: 2rem;
+                        color: #b64f54;
+                    }
+                    &:first-child{
+                        h4{
+                            font-weight: normal;
+                            text-align: right;
+                        }
+                    }
+                    &:last-child{
+                        h4{
+                            font-weight: bold;
+                            font-size: 4rem;
+                            span{
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__btn{
+            &1,&2{
+                font-size: 1.5rem;
+                line-height: 1.3;
+            }
+            &1{
+                margin-top: 40px;
+                .c-btn{
+                    border-radius: 5px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            &2{
+                margin-top: 15px;
+                .c-btn{
+                    border-radius: 5px;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
