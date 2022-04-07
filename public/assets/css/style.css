@@ -119,14 +119,9 @@ footer
 /* layout
 ------------------------------------------------------------*/
 body {
-<<<<<<< HEAD
-  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
-  font-size: 1.2rem;
-=======
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
->>>>>>> 88d988777a03e79e2bf394c40d976cd64f16c443
   min-width: 320px;
   max-width: 768px;
   margin: 0 auto;
@@ -142,7 +137,6 @@ body {
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Component .c-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
-<<<<<<< HEAD
 .c-header {
   position: fixed;
   top: 0;
@@ -220,7 +214,9 @@ body {
 @keyframes active-menu-bar02 {
   100% {
     height: 0;
-=======
+  }
+}
+
 .c-loading {
   position: fixed;
   position: relative;
@@ -274,7 +270,6 @@ body {
   }
   to {
     transform: rotateY(-360deg);
->>>>>>> 88d988777a03e79e2bf394c40d976cd64f16c443
   }
 }
 
