@@ -409,7 +409,6 @@ body {
   }
 }
 
-<<<<<<< HEAD
 .c-search {
   position: relative;
 }
@@ -434,10 +433,10 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   color: #c2c2c4;
-=======
+}
+
 .c-product {
   padding: 4%;
->>>>>>> hung_master
 }
 
 .c-product__img {

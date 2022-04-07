@@ -14,11 +14,7 @@ $(document).ready(function() {
         //Add padding top
     $('main').css('padding-top', $('.c-header').outerHeight())
     $('main').css('padding-top', $('.c-headerv2').outerHeight())
-<<<<<<< HEAD
-    setTimeout(function(){
+    setTimeout(function() {
         $('.c-loading').fadeOut(1000);
-    },1000)
-=======
-    $('.c-loading').fadeOut(1000);
->>>>>>> hung_master
+    }, 1000)
 })
