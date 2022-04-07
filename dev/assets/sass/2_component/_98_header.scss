@@ -43,7 +43,9 @@
 
 // Header V2
 .c-headerv2 {
+    background: #fff;
     position: fixed;
+    z-index: 999;
     top: 0;
     padding: 15px 30px;
     max-width: 768px;

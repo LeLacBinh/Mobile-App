@@ -10,5 +10,5 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         $('.c-header__menu').toggleClass('is-active');
     })
-    $('.c-loading').fadeOut(1000)
+    $('.c-loading').fadeOut(1000);
 })

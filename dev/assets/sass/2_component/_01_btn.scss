@@ -21,5 +21,18 @@
         border: 2px solid $pink;
         background-color: #fff;
         color: $pink;
+        &.is-alert {
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: -7px;
+                right: -3px;
+                width: 15px;
+                height: 15px;
+                background-color: red;
+                border-radius: 50%;
+            }
+        }
     }
 }
