@@ -776,6 +776,37 @@ Css of home page
   background: #f7f7f7;
 }
 
+.p-news .row:last-child .p-news__row {
+  border-bottom: none;
+}
+
+.p-news__row {
+  width: 95%;
+  margin: 0 auto;
+  border-bottom: 2px solid #d8d8d8;
+}
+
+.p-news__row a, .p-news__row span {
+  display: block;
+}
+
+.p-news__row h4, .p-news__row span {
+  color: #58656e;
+}
+
+.p-news__row a {
+  padding: 15px 10px;
+}
+
+.p-news__row span {
+  font-size: 1rem;
+}
+
+.p-news__row h4 {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Utility .u-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
