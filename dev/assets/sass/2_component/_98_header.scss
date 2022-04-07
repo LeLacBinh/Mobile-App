@@ -19,7 +19,7 @@
         opacity: 0;
         &.is-active {
             opacity: 1;
-            height: calc(100% - (59px + 70px));
+            height: calc(100% - (59px + 60px));
             top: 59px;
             bottom: 70px;
         }

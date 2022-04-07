@@ -1,0 +1,25 @@
+.c-btn {
+    display: block;
+    width: 100%;
+    padding: 15px 15px;
+    font-weight: bold;
+    text-align: center;
+    &+.c-btn {
+        margin-top: 15px;
+    }
+    &--silver {
+        border: 2px solid #cecece;
+        background-color: $silver;
+        color: #fff;
+    }
+    &--pink {
+        border: 2px solid #cecece;
+        background-color: $pink;
+        color: #fff;
+    }
+    &--white {
+        border: 2px solid $pink;
+        background-color: #fff;
+        color: $pink;
+    }
+}
