@@ -1,6 +1,38 @@
 /*------------------------------------------------------------
 footer
 ------------------------------------------------------------*/
-.c-footer{
 
+.c-footer {
+    background-color: #fff;
+    border-top: 2px solid #d5d5d5;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    max-width: 768px;
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    &__item {
+        width: 50%;
+        padding: 5px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        &:nth-child(1) {
+            border-right: 1px solid #d5d5d5;
+        }
+        &:nth-child(2) {
+            border-left: 1px solid #d5d5d5;
+        }
+    }
+    i {
+        color: #a8adb0;
+        font-size: 2rem;
+    }
+    span {
+        color: #a8adb0;
+        font-size: 1.2rem;
+    }
 }
