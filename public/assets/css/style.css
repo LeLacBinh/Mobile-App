@@ -211,6 +211,21 @@ main {
   color: #a75d76;
 }
 
+.c-btn--white.is-alert {
+  position: relative;
+}
+
+.c-btn--white.is-alert::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: -3px;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+}
+
 .c-loading {
   position: fixed;
   position: relative;
@@ -265,6 +280,60 @@ main {
   to {
     transform: rotateY(-360deg);
   }
+}
+
+.c-post__item {
+  position: relative;
+  margin-top: 12px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+}
+
+.c-post__status {
+  display: inline-block;
+  padding: 2px 40px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.c-post__status--consideration {
+  background-color: #a75d76;
+}
+
+.c-post__status--adopted {
+  background-color: #7f7f7f;
+}
+
+.c-post__status--recruitment {
+  background-color: #a5a5a5;
+}
+
+.c-post__posted {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.c-post__content {
+  overflow: hidden;
+  min-height: 54px;
+  margin-bottom: 15px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.c-post__answer {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 
 .c-input {
@@ -377,7 +446,9 @@ main {
 }
 
 .c-headerv2 {
+  background: #fff;
   position: fixed;
+  z-index: 999;
   top: 0;
   padding: 15px 30px;
   max-width: 768px;
@@ -478,6 +549,12 @@ Css of home page
 /*------------------------------------------------------------
 Css of home page
 ------------------------------------------------------------*/
+.p-history__body {
+  min-height: 100vh;
+  padding: 4%;
+  background: #f7f7f7;
+}
+
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Utility .u-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
