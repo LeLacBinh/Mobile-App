@@ -1,9 +1,23 @@
 .c-btn {
+    position: relative;
+    box-sizing: border-box;
     display: block;
     width: 100%;
     padding: 15px 15px;
     font-weight: bold;
     text-align: center;
+    &.is-alert {
+        &::after {
+            content: "";
+            position: absolute;
+            top: -7px;
+            right: -3px;
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    }
     &+.c-btn {
         margin-top: 15px;
     }
@@ -21,18 +35,23 @@
         border: 2px solid $pink;
         background-color: #fff;
         color: $pink;
-        &.is-alert {
-            position: relative;
-            &::after {
-                content: "";
-                position: absolute;
-                top: -7px;
-                right: -3px;
-                width: 15px;
-                height: 15px;
-                background-color: red;
-                border-radius: 50%;
-            }
-        }
+    }
+    &--quesblue {
+        color: #fff;
+        padding: 20px 15px;
+        font-size: 2rem;
+        border-radius: 8px;
+        border: 2px solid #cecece;
+        background-color: $blue-blur;
+        box-shadow: 3px 4px 7px #919191;
+    }
+    &--quessilver {
+        color: #fff;
+        padding: 20px 15px;
+        font-size: 2rem;
+        border-radius: 8px;
+        border: 2px solid #cecece;
+        background-color: $silver-blur;
+        box-shadow: 3px 4px 7px #919191;
     }
 }

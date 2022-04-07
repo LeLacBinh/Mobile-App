@@ -1,6 +1,9 @@
 .c-exchange {
     min-height: 100vh;
     background: #eae4ec;
+    &--detail {
+        background: #fff;
+    }
     &__header {
         background: #fff;
         padding: 30px 21px;

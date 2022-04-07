@@ -2,18 +2,70 @@
 /*------------------------------------------------------------
 	Reset
 ------------------------------------------------------------*/
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, dialog, figure, footer, header,
-nav, section,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+nav,
+section,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -21,8 +73,18 @@ time, mark, audio, video {
   box-sizing: border-box;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, main {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
   display: block;
 }
 
@@ -34,27 +96,50 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-body, table,
-input, textarea, select, option,
-h1, h2, h3, h4, h5, h6 {
+* {
+  box-sizing: border-box;
+}
+
+body,
+table,
+input,
+textarea,
+select,
+option,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
 }
 
 table,
-input, textarea, select, option {
+input,
+textarea,
+select,
+option {
   line-height: 1.1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
@@ -182,11 +267,24 @@ body {
 // Component .c-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
 .c-btn {
+  position: relative;
+  box-sizing: border-box;
   display: block;
   width: 100%;
   padding: 15px 15px;
   font-weight: bold;
   text-align: center;
+}
+
+.c-btn.is-alert::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: -3px;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
 }
 
 .c-btn + .c-btn {
@@ -211,19 +309,24 @@ body {
   color: #a75d76;
 }
 
-.c-btn--white.is-alert {
-  position: relative;
+.c-btn--quesblue {
+  color: #fff;
+  padding: 20px 15px;
+  font-size: 2rem;
+  border-radius: 8px;
+  border: 2px solid #cecece;
+  background-color: #4f65a2;
+  box-shadow: 3px 4px 7px #919191;
 }
 
-.c-btn--white.is-alert::after {
-  content: "";
-  position: absolute;
-  top: -7px;
-  right: -3px;
-  width: 15px;
-  height: 15px;
-  background-color: red;
-  border-radius: 50%;
+.c-btn--quessilver {
+  color: #fff;
+  padding: 20px 15px;
+  font-size: 2rem;
+  border-radius: 8px;
+  border: 2px solid #cecece;
+  background-color: #a5a5a5;
+  box-shadow: 3px 4px 7px #919191;
 }
 
 .c-loading {
@@ -283,6 +386,10 @@ body {
   }
 }
 
+.c-product {
+  padding: 4%;
+}
+
 .c-product__img {
   width: 100px;
   height: auto;
@@ -338,9 +445,119 @@ body {
   align-items: center;
 }
 
+.c-productdetail {
+  padding: 4%;
+}
+
+.c-productdetail__inner {
+  border-radius: 8px;
+  border: 1px solid #d8d8d8;
+}
+
+.c-productdetail__body {
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 3px;
+}
+
+.c-productdetail__cover {
+  overflow: hidden;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.c-productdetail__title {
+  padding: 15px 5px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.c-productdetail__title h3 {
+  padding-left: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.c-productdetail__description {
+  min-height: 110px;
+  padding: 10px 5px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.c-productdetail__description p {
+  padding: 0 15px;
+}
+
+.c-productdetail__description__heading {
+  padding: 0 15px;
+  color: #7f7f7f;
+}
+
+.c-productdetail__exchange {
+  min-height: 150px;
+  padding: 10px 5px;
+}
+
+.c-productdetail__exchange p {
+  padding: 0 15px;
+}
+
+.c-productdetail__exchange__heading {
+  font-size: 1.2rem;
+  padding: 0 15px;
+  color: #7f7f7f;
+}
+
+.c-productdetail__bottom {
+  display: flex;
+  justify-content: space-between;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 12% 20px 13px;
+  background-image: url("../img/coupon.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.c-productdetail__point {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 0px 15px;
+  background: #a3124f;
+}
+
+.c-productdetail__text {
+  padding-right: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #a3124f;
+}
+
+.c-question__main {
+  padding-left: 13%;
+  padding-right: 13%;
+}
+
+.c-question__btn {
+  min-height: calc(100vh - 113px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-question__btn .c-btn + .c-btn {
+  margin-top: 40px;
+}
+
 .c-exchange {
   min-height: 100vh;
   background: #eae4ec;
+}
+
+.c-exchange--detail {
+  background: #fff;
 }
 
 .c-exchange__header {
@@ -493,6 +710,7 @@ body {
   max-width: 768px;
   width: 100%;
   position: fixed;
+  z-index: 1;
   top: 0;
   border-bottom: 2px solid #d5d5d5;
 }
@@ -537,7 +755,7 @@ body {
 .c-headerv2 {
   background: #fff;
   position: fixed;
-  z-index: 999;
+  z-index: 1;
   top: 0;
   padding: 15px 30px;
   max-width: 768px;
@@ -771,7 +989,6 @@ Css of home page
 .p-history__body {
   min-height: 100vh;
   padding: 4%;
-  padding-bottom: 60px;
   background: #f7f7f7;
 }
 
