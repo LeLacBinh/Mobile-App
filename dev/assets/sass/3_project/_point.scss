@@ -7,6 +7,7 @@
         &__box{
             width: 90%;
             margin: 0 auto;
+            margin-bottom: 40px;
         }
         &__title{
             display: flex;
@@ -69,6 +70,11 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    &.is-alert{
+                        &::after{
+                            border: 2px solid white;
+                        }
+                    }
                 }
             }
             &2{
