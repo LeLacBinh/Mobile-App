@@ -1,0 +1,118 @@
+<%- include('inc/_headerv2'); %>
+    <!--▼ Header ▼-->
+    <header class="c-headerv2">
+        <a href="javascript:history.back()" class="c-headerv2__back">
+            <i class="fa-solid fa-angle-left"></i>
+        </a>
+        <p>
+            所属店舗データ
+        </p>
+    </header>
+    <!--▲ Header ▲-->
+    <!--▼ Content area ▼-->
+    <main class="p-store">
+        <div class="c-store">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#s1" type="button" role="tab" aria-selected="true">KPI</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#s2" type="button" role="tab" aria-selected="false">QSC</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#s3" type="button" role="tab" aria-selected="false">詳細①</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#s4" type="button" role="tab" aria-selected="false">詳細②</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#s5" type="button" role="tab" aria-selected="false">詳細③</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#s6" type="button" role="tab" aria-selected="false">詳細④</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="s1" role="tabpanel">
+                    <div class="c-store__header">
+                        <div class="row c-store__name align-items-center">
+                            <div class="col-3">
+                                <img src="./assets/img/logo-image.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-9">
+                                <h3>
+                                    梅田店
+                                </h3>
+                                <p>(〇〇坪 / 〇〇席)</p>
+                            </div>
+                        </div>
+                        <div class="c-titleline c-titleline--green">
+                            <i class="fas fa-house-chimney"></i>
+                            <p>現在のKPI進捗</p>
+                        </div>
+                        <div class="c-box c-box--green">
+                            <div class="c-box__heading">
+                                <p>達成率</p>
+                            </div>
+                            <div class="c-box__content">
+                                <p class="c-box__big">
+                                    58点
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-store__body">
+                        <table class="table table-bordered c-table50">
+                            <tbody>
+                                <tr>
+                                    <th>定着率</th>
+                                    <td>80.0%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>時間当たり達成回数
+                                    </th>
+                                    <td>10
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Q（点数）</th>
+                                    <td>40
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>S（点数）</th>
+                                    <td>40
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>C（点数）</th>
+                                    <td>40
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>運営（点数）</th>
+                                    <td>40
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>売上予算の達成率
+                                    </th>
+                                    <td>91.8%
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="s2" role="tabpanel">.2..</div>
+                <div class="tab-pane fade" id="s3" role="tabpanel">.3..</div>
+                <div class="tab-pane fade" id="s4" role="tabpanel">...</div>
+                <div class="tab-pane fade" id="s5" role="tabpanel">.2..</div>
+                <div class="tab-pane fade" id="s6" role="tabpanel">.3..</div>
+            </div>
+        </div>
+    </main>
+    <!--▲ Content are ▲-->
+    <%- include('inc/_footer'); %>

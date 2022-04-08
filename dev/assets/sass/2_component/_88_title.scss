@@ -1,0 +1,21 @@
+.c-title {
+    &line {
+        margin: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid;
+        padding-bottom: 8px;
+        i {
+            font-size: 3rem;
+        }
+        p {
+            margin-left: 7px;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        &--green {
+            color: #bdbd69;
+        }
+    }
+}

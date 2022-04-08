@@ -1,0 +1,31 @@
+.c-store {
+    padding: 4%;
+    .nav-item {
+        width: calc((100% / 6) - 2px);
+    }
+    &__header {
+        margin-top: 25px;
+    }
+    &__name {
+        margin-bottom: 35px;
+        h3 {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+    }
+    .c-box {
+        margin-top: 20px;
+    }
+    tbody,
+    td,
+    th {
+        border: 1px solid #DEE2E6!important;
+    }
+    .c-table50 {
+        th,
+        td {
+            width: 50%;
+        }
+    }
+}

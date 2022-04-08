@@ -1,0 +1,22 @@
+.nav-tabs {
+    justify-content: space-between;
+    padding: 0 5px;
+    border-bottom: 1px solid #a5a5a5;
+    button {
+        width: 100%;
+        &.active {}
+    }
+    .nav-link {
+        padding: 6px 3px;
+        border: 1px solid #a5a5a5;
+        color: #a5a5a5;
+        font-weight: bold;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        &.active {
+            color: #fff;
+            background: #bfbfbf;
+            border-color: #a5a5a5;
+        }
+    }
+}

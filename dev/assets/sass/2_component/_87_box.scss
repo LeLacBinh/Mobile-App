@@ -1,0 +1,29 @@
+.c-box {
+    border-radius: 8px;
+    border: 2px solid;
+    overflow: hidden;
+    &--green {
+        border-color: #bdbd69;
+        .c-box__heading {
+            background: #bdbd69;
+        }
+    }
+    &__heading {
+        padding: 10px 0;
+        text-align: center;
+        font-size: 1.6rem;
+        color: #fff;
+    }
+    &__content {
+        min-height: 70px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    &__big {
+        font-size: 2rem;
+    }
+}
