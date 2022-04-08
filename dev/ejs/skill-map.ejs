@@ -1,0 +1,137 @@
+<%- include('inc/_headerv2'); %>
+<!--▼ Header ▼-->
+<header class="c-headerv2">
+    <a href="javascript:history.back()" class="c-headerv2__back">
+        <i class="fa-solid fa-angle-left"></i>
+    </a>
+    <p>
+        スキルマップ
+    </p>
+</header>
+<!--▲ Header ▲-->
+<!--▼ Content area ▼-->
+<main class="p-skill">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">達成率</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">スキル一覧</button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">チャレンジ</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <!-- --- Tab 1 --- -->
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="c-infor">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="c-infor__image">
+                                        <img src="../assets/img/avatar.jpg" alt="avatar">
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="c-infor__text">
+                                        <h4>山田 太郎</h4>
+                                        <p>
+                                            入社年月日 2016.01.01<br>
+                                            (勤続4年10ヵ月)
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <p>チーム</p>
+                                                <p>〇〇〇〇</p>
+                                            </li>
+                                            <li>
+                                                <p>所属</p>
+                                                <p>〇〇〇〇〇店</p>
+                                            </li>
+                                            <li>
+                                                <p>役職</p>
+                                                <p>店長</p>
+                                            </li>
+                                            <li>
+                                                <p>階級</p>
+                                                <p>ゴールド</p>
+                                            </li>
+                                            <li>
+                                                <p>等級</p>
+                                                <p>5等級</p>
+                                            </li>
+                                            <li>
+                                                <p>資格</p>
+                                                <p>ソムリエ</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-skill__tab1Cont">
+                            <div class="c-tab-box">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="c-tab-title c-tab-title--skill">
+                                            <img src="../assets/img/skill.png" alt="達成率">
+                                            <h3>達成率</h3>
+                                        </div>
+                                        <div class="p-skill__data d-flex justify-content-between">
+                                                <div class="c-box c-box--green">
+                                                    <h4 class="c-box__title">ホール</h4>
+                                                    <div class="c-box__content">
+                                                        <h3>
+                                                            89%
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="c-box c-box--blue">
+                                                    <h4 class="c-box__title">キッチン</h4>
+                                                    <div class="c-box__content">
+                                                        <h3>
+                                                            52%
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="c-box c-box--yellow">
+                                                    <h4 class="c-box__title">マネジメント</h4>
+                                                    <div class="c-box__content">
+                                                        <h3>
+                                                            70%
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="p-skill__chart" style="height: 250px;">
+                                            <canvas id="skill_chart_01" style="width:100%;max-width:700px"></canvas>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- --- Tab 2 --- -->
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="p-skill__radarBtn d-flex text-center">
+                            <a href="#">
+                                <p>ホール</p><span>スキル一覧</span>
+                            </a>
+                            <a href="#">
+                                <p>キッチン</p>
+                                <span>スキル一覧</span>
+                            </a>
+                            <a href="#">
+                                <p>マネジメント</p>
+                                <span>スキル一覧</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- --- Tab 3 --- -->
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--▲ Content are ▲-->
+ <%- include('inc/_footer'); %>

@@ -1,0 +1,19 @@
+.c-tab-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b64f54;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #b64f54;
+    img{
+        max-width: 30px;
+        margin-right: 10px;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    &--skill{
+        color: #60a48d;
+        border-bottom-color: #60a48d;
+    }
+}

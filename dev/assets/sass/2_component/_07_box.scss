@@ -1,0 +1,28 @@
+.c-box{
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: gray;
+    overflow: hidden;
+    &__title{
+        
+        color: white;
+        padding: 5px 10px;
+    }
+    &__content{
+        padding: 10px;
+        background-color: white;
+    }
+    &--green{
+        border-color: #60a48d;
+        background-color: #60a48d;
+    }
+    &--blue{
+        border-color: #8da9db;
+        background-color: #8da9db;
+    }
+    &--yellow{
+        border-color: #ffd44b;
+        background-color: #ffd44b;
+    }
+}

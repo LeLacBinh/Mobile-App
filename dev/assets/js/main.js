@@ -1,4 +1,25 @@
 $(document).ready(function() {
+    var xValues = ["ホール", "キッチン", "マネジメント"];
+    var yValues = [89, 52, 70];
+    var barColors = ["#60a48d", "#8da9db","#ffd44b"];
+
+    new Chart("skill_chart_01", {
+    type: "bar",
+    data: {
+        labels: xValues,
+        datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+        }]
+    },
+    options: {
+        maintainAspectRatio: false,
+        plugins:{
+            legend:{ display: false}
+        }
+    }
+    });
+    $('#skill_chart_01').height(200)
     //Add padding top
     $('main').css({
         'padding-top': $('.c-header').outerHeight(),
