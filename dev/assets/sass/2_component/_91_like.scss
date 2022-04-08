@@ -1,0 +1,90 @@
+.c-like {
+    &__header {
+        padding: 50px 0;
+        background: #f5e7e8;
+        &__remaining {
+            font-weight: bold;
+            font-size: 1.8rem;
+            color: #a3124f;
+            span {
+                font-size: 2rem;
+            }
+        }
+    }
+    &__body {
+        padding: 4%;
+        .form-control {
+            font-size: 1.6rem;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            min-height: 35px;
+        }
+        #search-button {
+            outline: none;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            width: 40px;
+            border: 1px solid #bfbfbf;
+            font-size: 1.6rem;
+            color: #fff;
+            background-color: #bfbfbf;
+        }
+        .c-btnsearch {
+            margin-bottom: 40px;
+        }
+    }
+    &__item {
+        margin-bottom: 15px;
+        padding: 0 20px;
+    }
+    &__title {
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    &__heading {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    &__main {
+        padding: 4%;
+    }
+    &__icon {
+        label {
+            font-size: 1rem;
+            color: $silver;
+            display: block;
+            position: relative;
+            cursor: pointer;
+            input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+            }
+        }
+        span {
+            display: block;
+            font-size: 2.2rem;
+        }
+    }
+    &__name {
+        margin-bottom: 30px;
+    }
+    &__group {
+        .c-like__label {
+            font-size: 1.4rem;
+            color: #b64f54;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .c-like__point {
+            min-height: 45px;
+        }
+        .c-like__content {
+            min-height: 150px;
+        }
+        .c-btn {
+            margin-top: 30px;
+        }
+    }
+}

@@ -1,0 +1,106 @@
+<%- include('inc/_headerv2'); %>
+    <!--▼ Header ▼-->
+    <header class="c-headerv2">
+        <a href="javascript:history.back()" class="c-headerv2__back">
+            <i class="fa-solid fa-angle-left"></i>
+        </a>
+        <p>
+            いいねポイントを送る
+        </p>
+    </header>
+    <!--▲ Header ▲-->
+    <!--▼ Content area ▼-->
+    <main class="p-like">
+        <div class="c-like">
+            <div class="c-like__header text-center">
+                <p class="c-like__header__remaining">
+                    残り　<span>50</span>P
+                </p>
+                <p class="c-like__header__desc">(1か月のいいねポイント上限：100)
+                </p>
+            </div>
+            <div class="c-like__main">
+                <div class="row c-like__name align-items-center">
+                    <div class="col-3">
+                        <img src="http://placehold.jp/30/d8d8d8/ffffff/100x100.png?text=%E7%94%BB%E5%83%8F" alt="">
+                    </div>
+                    <div class="col-9">
+                        <h3 class="c-like__heading">
+                            梅田店　鈴木一郎
+                        </h3>
+                    </div>
+                </div>
+                <div class="c-like__group">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="c-like__point" class="c-like__label">ポイント
+                            </label>
+                            <div class="row align-items-end">
+                                <div class="col-9">
+                                    <input type="email" class="form-control c-like__point" id="c-like__point">
+                                </div>
+                                <div class="col-3">
+                                    <p class="c-like__label">ポイント</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-like__content" class="c-like__label">コメント
+                            </label>
+                            <textarea name="c-like__content" id="c-like__content" class="form-control c-like__content"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-like__content" class="c-like__label">スタンプ
+                            </label>
+                            <div class="row text-center">
+                                <div class="col c-like__icon">
+                                    <label for="like-1">
+                                        <input type="radio" name="like-1">
+                                        <span>😊</span>
+                                        ありがとう
+                                    </label>
+
+                                </div>
+                                <div class="col c-like__icon">
+                                    <label for="like-1">
+                                        <input type="radio" name="like-1">
+                                        <span>😆</span>
+                                        おめでとう
+                                    </label>
+
+                                </div>
+                                <div class="col c-like__icon">
+                                    <label for="like-1">
+                                        <input type="radio" name="like-1">
+                                        <span>😍</span>
+                                        すばらしい
+                                    </label>
+
+                                </div>
+                                <div class="col c-like__icon">
+                                    <label for="like-1">
+                                        <input type="radio" name="like-1">
+                                        <span>😌</span>
+                                        頑張ってるね
+                                    </label>
+
+                                </div>
+                                <div class="col c-like__icon">
+                                    <label for="like-1">
+                                        <input type="radio" name="like-1">
+                                        <span>🙂</span>
+                                        ありがとう
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="c-btn c-btn--red">送信</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--▲ Content are ▲-->
+    <%- include('inc/_footer'); %>

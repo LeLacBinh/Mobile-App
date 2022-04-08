@@ -36,9 +36,16 @@
         background-color: #fff;
         color: $pink;
     }
-    &--red{
+    &--red {
+        border: 2px solid transparent;
         background-color: #b64f54;
-        color:white
+        color: white;
+        &s {
+            background-color: #b64f54;
+            color: white;
+            font-weight: 400;
+            padding: 5px 15px;
+        }
     }
     &--quesblue {
         color: #fff;
@@ -58,26 +65,27 @@
         background-color: $silver-blur;
         box-shadow: 3px 4px 7px #919191;
     }
-}
-
-.c-btnprev {
-    margin: 0 5px;
-    border-radius: 8px;
-    font-size: 1.4rem;
-    background-color: #fff;
-    border: 1px solid #cecece;
-    font-weight: bold;
-    color: $silver;
-    padding: 8px 35px;
-}
-
-.c-btnnext {
-    margin: 0 5px;
-    border-radius: 8px;
-    font-size: 1.4rem;
-    background-color: $blue-blur;
-    border: 1px solid #cecece;
-    font-weight: bold;
-    color: #fff;
-    padding: 8px 35px;
+    &prev {
+        margin: 0 5px;
+        border-radius: 8px;
+        font-size: 1.4rem;
+        background-color: #fff;
+        border: 1px solid #cecece;
+        font-weight: bold;
+        color: $silver;
+        padding: 8px 35px;
+    }
+    &next {
+        margin: 0 5px;
+        border-radius: 8px;
+        font-size: 1.4rem;
+        background-color: $blue-blur;
+        border: 1px solid #cecece;
+        font-weight: bold;
+        color: #fff;
+        padding: 8px 35px;
+    }
+    &search {
+        width: 100%;
+    }
 }
