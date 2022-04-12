@@ -17,5 +17,19 @@
         &--green {
             color: #bdbd69;
         }
+        &--orange {
+            color: #e4a869;
+        }
+    }
+    &box {
+        padding: 8px;
+        border: 1px solid #dedede;
+        width: 100%;
+        text-align: center;
+        color: #595959;
+        font-weight: bold;
+        span {
+            font-size: 1.4rem;
+        }
     }
 }

@@ -21,6 +21,13 @@
     &+.c-btn {
         margin-top: 15px;
     }
+    &--orange {
+        border-radius: 4px;
+        padding: 8px;
+        border: 2px solid #cecece;
+        background-color: #ff3300;
+        color: #fff;
+    }
     &--silver {
         border: 2px solid #cecece;
         background-color: $silver;
@@ -87,5 +94,17 @@
     }
     &search {
         width: 100%;
+    }
+}
+
+.c-footerbtn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 50px;
+    background: rgba($color: #fff, $alpha: .8);
+    a {
+        display: block;
     }
 }

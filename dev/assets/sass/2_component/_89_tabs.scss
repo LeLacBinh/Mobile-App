@@ -1,10 +1,12 @@
 .nav-tabs {
     flex-wrap: nowrap;
-    overflow-y: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
     padding: 0 5px;
     border-bottom: 1px solid #a5a5a5;
     .nav-link {
-        padding: 6px 3px;
+        min-height: 40px;
+        padding: 0;
         border: 1px solid #a5a5a5;
         color: #a5a5a5;
         font-weight: bold;

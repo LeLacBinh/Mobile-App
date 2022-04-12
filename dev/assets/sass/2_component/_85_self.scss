@@ -1,0 +1,30 @@
+.c-self {
+    padding: 4%;
+    &__chart {
+        display: flex;
+        width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 2px solid red;
+        &__item {
+            width: calc(100% / 3);
+            text-align: center;
+            &:last-child {
+                .c-self__chart__content,
+                .c-self__chart__header {
+                    border-width: 0;
+                }
+            }
+        }
+        &__header {
+            padding: 8px;
+            background: red;
+            border-right: 2px solid blue;
+        }
+        &__content {
+            padding: 15px 5px;
+            font-size: 2rem;
+            border-right: 2px solid red;
+        }
+    }
+}
