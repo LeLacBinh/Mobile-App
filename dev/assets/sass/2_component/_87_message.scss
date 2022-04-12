@@ -1,11 +1,18 @@
-.c-box {
+.c-message {
     border-radius: 8px;
     border: 2px solid;
     overflow: hidden;
     &--green {
         border-color: #bdbd69;
-        .c-box__heading {
+        .c-message__heading {
             background: #bdbd69;
+        }
+    }
+    &--dark {
+        border-color: #7f7f7f;
+        .c-message__heading {
+            font-weight: bold;
+            background: #7f7f7f;
         }
     }
     &__heading {

@@ -1,11 +1,8 @@
 .nav-tabs {
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
     padding: 0 5px;
     border-bottom: 1px solid #a5a5a5;
-    button {
-        width: 100%;
-        &.active {}
-    }
     .nav-link {
         padding: 6px 3px;
         border: 1px solid #a5a5a5;
@@ -17,6 +14,13 @@
             color: #fff;
             background: #bfbfbf;
             border-color: #a5a5a5;
+        }
+    }
+    .nav-item {
+        margin-right: 3px;
+        min-width: 75px;
+        button {
+            width: 100%;
         }
     }
 }
