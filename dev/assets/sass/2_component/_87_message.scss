@@ -1,11 +1,11 @@
-.c-box {
+.c-message {
     border-radius: 8px;
     border: 2px solid;
     overflow: hidden;
     &--green {
-        border-color: #bdbd69;
-        .c-box__heading {
-            background: #bdbd69;
+        border-color: #BDBD69;
+        .c-message__heading {
+            background: #BDBD69;
         }
     }
     &__heading {
