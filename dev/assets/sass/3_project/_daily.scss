@@ -1,0 +1,41 @@
+.p-daily{
+    &__table{
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+        border: 1px solid #d5d5d5;
+        tr,th,td{
+            border-collapse: collapse;
+            border: 1px solid #d5d5d5;
+        }
+        tr{
+            td{
+                height: 30px;
+                padding: 5px;
+                &.day{
+                    position: relative;
+                    cursor: pointer;
+                    span{
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                    }
+                    &:hover{
+                        background-color: #ffe1d9;
+                    }
+                }
+                &:first-child{
+                    color: red;
+                }
+                &:last-child{
+                    color: royalblue;
+                }
+            }
+            &:not(:first-child){
+                td{
+                    height: 60px;
+                }
+            }
+        }
+    }
+}

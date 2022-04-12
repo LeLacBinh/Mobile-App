@@ -1,30 +1,119 @@
-$(document).ready(function() {
-    $(".js-clickScroll").on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
+$(document).ready(function () {
+    js_calendar()
+  //Add padding top
+  $("main").css({
+    "padding-top": $("#the_header").outerHeight(),
+    "padding-bottom": $("#the_footer").outerHeight(),
+  });
 
-            $('html, body').animate({
-            scrollTop: $(hash).offset().top - $('.c-headerv2').outerHeight()
-            }, 800);
+  // Header icon click
+  $(".menu-trigger").click(function () {
+    $(this).toggleClass("active");
+    $(".c-header__menu").toggleClass("is-active");
+  });
+  //Add padding top
+  $("main").css("padding-top", $(".c-header").outerHeight());
+  $("main").css("padding-top", $(".c-headerv2").outerHeight());
+  setTimeout(function () {
+    $(".c-loading").fadeOut(1000);
+  }, 1000);
+});
+
+function js_calendar() {
+  var currentDate = new Date();
+  function generateCalendar(d) {
+    function monthDays(month, year) {
+      var result = [];
+      var days = new Date(year, month, 0).getDate();
+      for (var i = 1; i <= days; i++) {
+        result.push(i);
+      }
+      return result;
+    }
+    Date.prototype.monthDays = function () {
+      var d = new Date(this.getFullYear(), this.getMonth() + 1, 0);
+      return d.getDate();
+    };
+    var details = {
+      // totalDays: monthDays(d.getMonth(), d.getFullYear()),
+      totalDays: d.monthDays(),
+      weekDays: ["日", "月", "火", "水", "木", "金	", "土"],
+      months: [
+        "1月",
+        "2月",
+        "3月",
+        "4月",
+        "5月",
+        "6月",
+        "7月",
+        "8月",
+        "9月",
+        "10月",
+        "11月",
+        "12月",
+      ],
+    };
+    var start = new Date(d.getFullYear(), d.getMonth()).getDay();
+    var cal = [];
+    var day = 1;
+    for (var i = 0; i <= 6; i++) {
+      cal.push(["<tr>"]);
+      for (var j = 0; j < 7; j++) {
+        if (i === 0) {
+          cal[i].push("<td>" + details.weekDays[j] + "</td>");
+        } else if (day > details.totalDays) {
+          cal[i].push("<td>&nbsp;</td>");
+        } else {
+          if (i === 1 && j < start) {
+            cal[i].push("<td>&nbsp;</td>");
+          } else {
+            cal[i].push('<td class="day"><span>' + day++ + "</span></td>");
+          }
         }
+      }
+      cal[i].push("</tr>");
+    }
+    cal = cal
+      .reduce(function (a, b) {
+        return a.concat(b);
+      }, [])
+      .join("");
+    $(".js-table").append(cal);
+    // $('#month').text(details.months[d.getMonth()]);
+    // $('#year').text(d.getFullYear());
+    $(".js-table .day")
+      .mouseover(function () {
+        $(this).addClass("hover");
+      })
+      .mouseout(function () {
+        $(this).removeClass("hover");
       });
-    //Add padding top
-    $('main').css({
-        'padding-top': $('#the_header').outerHeight(),
-        'padding-bottom': $('#the_footer').outerHeight()
-    })
-
-    // Header icon click
-    $(".menu-trigger").click(function() {
-            $(this).toggleClass('active');
-            $('.c-header__menu').toggleClass('is-active');
-
-        })
-        //Add padding top
-    $('main').css('padding-top', $('.c-header').outerHeight())
-    $('main').css('padding-top', $('.c-headerv2').outerHeight())
-    setTimeout(function() {
-        $('.c-loading').fadeOut(1000);
-    }, 1000)
-})
+  }
+  $("#left").click(function () {
+    $(".js-table").text("");
+    if (currentDate.getMonth() === 0) {
+      currentDate = new Date(currentDate.getFullYear() - 1, 11);
+      generateCalendar(currentDate);
+    } else {
+      currentDate = new Date(
+        currentDate.getFullYear(),
+        currentDate.getMonth() - 1
+      );
+      generateCalendar(currentDate);
+    }
+  });
+  $("#right").click(function () {
+    $(".js-table").html("<tr></tr>");
+    if (currentDate.getMonth() === 11) {
+      currentDate = new Date(currentDate.getFullYear() + 1, 0);
+      generateCalendar(currentDate);
+    } else {
+      currentDate = new Date(
+        currentDate.getFullYear(),
+        currentDate.getMonth() + 1
+      );
+      generateCalendar(currentDate);
+    }
+  });
+  generateCalendar(currentDate);
+}

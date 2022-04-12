@@ -66,4 +66,26 @@
             }
         }
     }
+    &__challenge{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+        border-radius: 10px;
+        border: 1px solid #d8d8d8;
+        background-color: #f2f2f2;
+        color: #a5a5a5;
+        height: 40vw;
+        max-height: 300px;
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        &--alert{
+            color: white;
+            background-color: #ff3300;
+        }
+    }
 }
