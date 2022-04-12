@@ -5,6 +5,16 @@
     .c-infor{
         margin-top: 40px;
     }
+    .c-table{
+        margin-top: 30px;
+        tbody{
+            td{
+                &:last-child{
+                    background-color: #d5e7e1;
+                }
+            }
+        }
+    }
     &__tab1Cont{
         margin: 40px 0;
     }
@@ -45,6 +55,14 @@
             p{
                 font-weight: bold;
                 font-size: 1.4rem;
+            }
+        }
+    }
+    &__radarList{
+        .item{
+            background-color: #f7f7f7;
+            &:not(:last-child){
+                margin-bottom: 20px;
             }
         }
     }
