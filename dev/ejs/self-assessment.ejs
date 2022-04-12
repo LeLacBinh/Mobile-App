@@ -1,0 +1,123 @@
+<%- include('inc/_headerv2'); %>
+    <!--▼ Header ▼-->
+    <header class="c-headerv2" id="the_header">
+        <a href="javascript:history.back()" class="c-headerv2__back">
+            <i class="fa-solid fa-angle-left"></i>
+        </a>
+        <p>
+            所属店舗データ
+        </p>
+    </header>
+    <!--▲ Header ▲-->
+    <!--▼ Content area ▼-->
+    <main class="p-self">
+        <div class="c-self">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                <!--▼ 詳細 1 ▼-->
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active " data-bs-toggle="tab" data-bs-target="#s3" type="button" role="tab" aria-selected="false">得点</button>
+                </li>
+                <!--▲ 詳細 1 ▲-->
+                <!--▼ 詳細 2 ▼-->
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#s4" type="button" role="tab" aria-selected="false">評価<br>
+                        コメント
+                    </button>
+                </li>
+                <!--▲ 詳細 2 ▲-->
+                <!--▼ 詳細 3 ▼-->
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#s5" type="button" role="tab" aria-selected="false">評価申請</button>
+                </li>
+                <!--▲ 詳細 3 ▲-->
+            </ul>
+            <div class="tab-content" id="myTabContent">
+
+                <!--▼ 詳細 1 ▼-->
+                <div class="tab-pane fade active show" id="s3" role="tabpanel ">
+                    <div class="c-infor">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="c-infor__image">
+                                    <img src="../assets/img/avatar.jpg" alt="avatar">
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="c-infor__text">
+                                    <h4>山田 太郎</h4>
+                                    <p>
+                                        入社年月日 2016.01.01<br> (勤続4年10ヵ月)
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p>チーム</p>
+                                            <p>〇〇〇〇</p>
+                                        </li>
+                                        <li>
+                                            <p>所属</p>
+                                            <p>〇〇〇〇〇店</p>
+                                        </li>
+                                        <li>
+                                            <p>役職</p>
+                                            <p>店長</p>
+                                        </li>
+                                        <li>
+                                            <p>階級</p>
+                                            <p>ゴールド</p>
+                                        </li>
+                                        <li>
+                                            <p>等級</p>
+                                            <p>5等級</p>
+                                        </li>
+                                        <li>
+                                            <p>資格</p>
+                                            <p>ソムリエ</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-titleline c-titleline--orange">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <p>評価</p>
+                    </div>
+                    <div class="c-self__chart">
+                        <div class="c-self__chart__item">
+                            <p class="c-self__chart__header">前々回</p>
+                            <div class="c-self__chart__content">
+                                <p>67点</p>
+                            </div>
+                        </div>
+                        <div class="c-self__chart__item">
+                            <p class="c-self__chart__header">前々回</p>
+                            <div class="c-self__chart__content">
+                                <p>67点</p>
+                            </div>
+                        </div>
+                        <div class="c-self__chart__item">
+                            <p class="c-self__chart__header">前々回</p>
+                            <div class="c-self__chart__content">
+                                <p>67点</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--▲ 詳細 1 ▲-->
+                <!--▼ 詳細 2 ▼-->
+                <div class="tab-pane fade " id="s4" role="tabpanel ">
+                    ---02
+                </div>
+                <!--▲ 詳細 2 ▲-->
+                <!--▼ 詳細 3 ▼-->
+                <div class="tab-pane fade " id="s5" role="tabpanel ">詳細 3</div>
+                <!--▲ 詳細 3 ▲-->
+                <!--▼ 詳細 4 ▼-->
+                <div class="tab-pane fade " id="s6" role="tabpanel ">詳細 4</div>
+                <!--▲ 詳細 4 ▲-->
+            </div>
+        </div>
+    </main>
+    <!--▲ Content are ▲-->
+    <%- include('inc/_footer'); %>

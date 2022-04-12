@@ -1,0 +1,158 @@
+<%- include('inc/_headerv2'); %>
+    <!--▼ Header ▼-->
+    <header class="c-headerv2" id="the_header">
+        <a href="javascript:history.back()" class="c-headerv2__back">
+            <i class="fa-solid fa-angle-left"></i>
+        </a>
+
+        <p>
+            チャレンジ
+        </p>
+    </header>
+    <!--▲ Header ▲-->
+    <!--▼ Content area ▼-->
+    <main class="p-challenge">
+        <div class="c-challenge">
+            <div class="c-challenge__header">
+                <p>
+                    チャレンジ数　<span>7</span> / 20
+
+                </p>
+            </div>
+            <div class="c-challenge__body">
+                <p class="c-challenge__title c-challenge__title--green">
+                    ホール
+                </p>
+                <table class="c-table c-table--green">
+                    <thead>
+                        <tr>
+                            <th scope="col">分類</th>
+                            <th scope="col">項目</th>
+                            <th scope="col">習得</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">基本
+                            </th>
+                            <td>お客様来店には率先して明るい挨拶や返事ができている</td>
+                            <td>
+                                <input type="checkbox" name="checkbox" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">基本</th>
+                            <td>来店への挨拶はその場から離れていてもお伝えすることができている（復唱）</td>
+                            <td>
+                                <input type="checkbox" name="checkbox" checked />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">基本</th>
+                            <td>お客様来店時に席への誘導、声掛けが3秒以内にできている</td>
+                            <td>
+                                <input type="checkbox" name="checkbox" checked />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">基本</th>
+                            <td>お客様の顔（特に目）を見て接客できている</td>
+                            <td>
+                                <input type="checkbox" name="checkbox" checked />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">サービス</th>
+                            <td>お冷・おしぼりを着席後速やかに提供できている</td>
+                            <td>
+                                <input type="checkbox" name="checkbox" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">基本</th>
+                            <td>お冷・おしぼりを正しい位置・方法で提供できている（お客様の正面におく・コップの縁を触らない）</td>
+                            <td>
+                                <input type="checkbox" name="checkbox" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">サービス</th>
+                            <td>小さなお子様がいらっしゃった場合は取り皿、スプーン、フォークを自ら気づいて提供できている</td>
+                            <td>
+                                <input type="checkbox" name="checkbox" checked />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">知識</th>
+                            <td>フード・ドリンクすべての名前を憶えている</td>
+                            <td>
+                                <input type="checkbox" name="checkbox" />
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <p class="c-challenge__title c-challenge__title--blue">
+                    キッチン
+                </p>
+                <table class="c-table c-table--blue">
+                    <thead>
+                        <tr>
+                            <th scope="col">分類</th>
+                            <th scope="col">項目</th>
+                            <th scope="col">習得</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">基本
+                            </th>
+                            <td>お客様来店には率先して明るい挨拶や返事ができている</td>
+                            <td>
+                                <input type="checkbox" name="checkbox" checked />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">基本</th>
+                            <td>来店への挨拶はその場から離れていてもお伝えすることができている（復唱）</td>
+                            <td>
+                                <input type="checkbox" name="checkbox" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="c-footerbtn">
+                <a href="#" class="c-btn c-btn--orange">
+                    申請する
+                </a>
+            </div>
+
+        </div>
+    </main>
+    <!--▲ Content are ▲-->
+    <%- include('inc/_footerv2'); %>
+
+        <!-- <script>
+            $(function() {
+                $('.c-table--green input').each(function() {
+
+                    if ($(this).is(':checked')) {
+                        $(this).parent().css({
+                            "border": "2px solid red"
+                        });
+                    };
+                    $(this).change(function() {
+                        if (this.checked) {
+                            $(this).parent().css({
+                                "border": "2px solid red"
+                            });
+                        } else {
+                            console.log('check chưa');
+
+                        }
+                    });
+                });
+            });
+        </script> -->

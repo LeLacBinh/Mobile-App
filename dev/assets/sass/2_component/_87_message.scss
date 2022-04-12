@@ -8,6 +8,13 @@
             background: #BDBD69;
         }
     }
+    &--dark {
+        border-color: #7f7f7f;
+        .c-message__heading {
+            font-weight: bold;
+            background: #7f7f7f;
+        }
+    }
     &__heading {
         padding: 10px 0;
         text-align: center;

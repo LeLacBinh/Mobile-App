@@ -74,16 +74,15 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="p-skill__tab1Cont">
-                                <div class="c-tab-box">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="c-tab-title c-tab-title--skill">
-                                                <img src="../assets/img/skill.png" alt="達成率">
-                                                <h3>達成率</h3>
-                                            </div>
-                                            <div class="p-skill__data d-flex justify-content-between">
+                                <div class="p-skill__tab1Cont">
+                                    <div class="c-tab-box">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="c-tab-title c-tab-title--skill">
+                                                    <img src="../assets/img/skill.png" alt="達成率">
+                                                    <h3>達成率</h3>
+                                                </div>
+                                                <div class="p-skill__data d-flex justify-content-between">
                                                     <div class="c-box c-box--green">
                                                         <h4 class="c-box__title">ホール</h4>
                                                         <div class="c-box__content">
@@ -108,14 +107,16 @@
                                                             </h3>
                                                         </div>
                                                     </div>
+                                                </div>
+                                                <div class="p-skill__chart" style="height: 250px;">
+                                                    <canvas id="skill_chart_01" style="width:100%;max-width:700px"></canvas>
+                                                </div>
                                             </div>
-                                            <div class="p-skill__chart" style="height: 250px;">
-                                                <canvas id="skill_chart_01" style="width:100%;max-width:700px"></canvas>
-                                            </div> 
                                         </div>
                                     </div>
                                 </div>
                             </div>
+<<<<<<< HEAD
                         </div>
                         <!-- --- Tab 2 --- -->
                         <div class="tab-pane fade" id="skill-02" role="tabpanel" aria-labelledby="skill-02-tab">
@@ -135,15 +136,86 @@
                             <div class="p-skill__radarList">
                                 <div class="item" id="">
                                     <canvas id="green_radar"></canvas>
+=======
+                            <!-- --- Tab 2 --- -->
+                            <div class="tab-pane fade" id="skill-02" role="tabpanel" aria-labelledby="skill-02-tab">
+                                <div class="p-skill__radarBtn d-flex text-center">
+                                    <a href="skill-map-01.html">
+                                        <p>ホール</p><span>スキル一覧</span>
+                                    </a>
+                                    <a href="skill-map-02.html">
+                                        <p>キッチン</p>
+                                        <span>スキル一覧</span>
+                                    </a>
+                                    <a href="skill-map-01.html">
+                                        <p>マネジメント</p>
+                                        <span>スキル一覧</span>
+                                    </a>
+>>>>>>> master
                                 </div>
-                                <div class="item">
-                                    <canvas id="blue_radar"></canvas>
+                                <div class="p-skill__radarList">
+                                    <div class="item" id="">
+                                        <canvas id="green_radar"></canvas>
+                                    </div>
+                                    <div class="item">
+                                        <canvas id="blue_radar"></canvas>
+                                    </div>
+                                    <div class="item">
+                                        <canvas id="yellow_radar"></canvas>
+                                    </div>
                                 </div>
-                                <div class="item">
-                                    <canvas id="yellow_radar"></canvas>
+                            </div>
+                            <!-- --- Tab 3 --- -->
+                            <div class="tab-pane fade show active" id="skill-03" role="tabpanel" aria-labelledby="skill-03-tab">
+                                <div class="c-infor">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="c-infor__image">
+                                                <img src="../assets/img/avatar.jpg" alt="avatar">
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="c-infor__text">
+                                                <h4>山田 太郎</h4>
+                                                <p>
+                                                    入社年月日 2016.01.01<br> (勤続4年10ヵ月)
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        <p>チーム</p>
+                                                        <p>〇〇〇〇</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>所属</p>
+                                                        <p>〇〇〇〇〇店</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>役職</p>
+                                                        <p>店長</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>階級</p>
+                                                        <p>ゴールド</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>等級</p>
+                                                        <p>5等級</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>資格</p>
+                                                        <p>ソムリエ</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-skill__challenge p-skill__challenge--alert">
+                                    <h3>チャレンジ</h3>
                                 </div>
                             </div>
                         </div>
+<<<<<<< HEAD
                         <!-- --- Tab 3 --- -->
                         <div class="tab-pane fade show active" id="skill-03" role="tabpanel" aria-labelledby="skill-03-tab">
                             <div class="c-infor">
@@ -196,118 +268,126 @@
                                 </a>
                             </div>
                         </div>
+=======
+>>>>>>> master
                     </div>
+
                 </div>
-                
             </div>
         </div>
-    </div>
-</main>
-<!--▲ Content are ▲-->
- <%- include('inc/_footer'); %>
- <script>
-    $(document).ready(function(){
-        //  Tab 1
-        var xValues = ["ホール", "キッチン", "マネジメント"];
-        var yValues = [89, 52, 70];
-        var barColors = ["#60a48d", "#8da9db","#ffd44b"];
+    </main>
+    <!--▲ Content are ▲-->
+    <%- include('inc/_footer'); %>
+        <script>
+            $(document).ready(function() {
+                //  Tab 1
+                var xValues = ["ホール", "キッチン", "マネジメント"];
+                var yValues = [89, 52, 70];
+                var barColors = ["#60a48d", "#8da9db", "#ffd44b"];
 
-        new Chart("skill_chart_01", {
-        type: "bar",
-        data: {
-            labels: xValues,
-            datasets: [{
-            backgroundColor: barColors,
-            data: yValues
-            }]
-        },
-        options: {
-            maintainAspectRatio: false,
-            plugins:{
-                legend:{ display: false}
-            }
-        }
-        });
-        $('#skill_chart_01').height(200)
+                new Chart("skill_chart_01", {
+                    type: "bar",
+                    data: {
+                        labels: xValues,
+                        datasets: [{
+                            backgroundColor: barColors,
+                            data: yValues
+                        }]
+                    },
+                    options: {
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        }
+                    }
+                });
+                $('#skill_chart_01').height(200)
 
-        // Tab 2
-        // Radio Chart
-        const radar_labels = [
-            '基本',
-            ['コミュニケ','ーション'],
-            '知識',
-            'サービス',
-            'その他'
-        ];
-        const green_data = {
-            labels: radar_labels,
-            datasets: [{
-                data: [65, 59, 90, 81, 56],
-                fill: true,
-                backgroundColor: 'transparent',
-                borderColor: '#60a48d',
-            }]
-        };
-        const blue_data = {
-            labels: radar_labels,
-            datasets: [{
-                data: [95, 89, 70, 61, 56],
-                fill: true,
-                backgroundColor: 'transparent',
-                borderColor: '#8da9db',
-            }]
-        };
-        const yellow_data = {
-            labels: radar_labels,
-            datasets: [{
-                data: [85, 79, 60, 51, 66],
-                fill: true,
-                backgroundColor: 'transparent',
-                borderColor: '#ffd44b',
-            }]
-        };
-        new Chart("green_radar", {
-            type: "radar",
-            data: green_data,
-            options: {
-                elements: {
-                    line: {
-                        borderWidth: 3
+                // Tab 2
+                // Radio Chart
+                const radar_labels = [
+                    '基本', ['コミュニケ', 'ーション'],
+                    '知識',
+                    'サービス',
+                    'その他'
+                ];
+                const green_data = {
+                    labels: radar_labels,
+                    datasets: [{
+                        data: [65, 59, 90, 81, 56],
+                        fill: true,
+                        backgroundColor: 'transparent',
+                        borderColor: '#60a48d',
+                    }]
+                };
+                const blue_data = {
+                    labels: radar_labels,
+                    datasets: [{
+                        data: [95, 89, 70, 61, 56],
+                        fill: true,
+                        backgroundColor: 'transparent',
+                        borderColor: '#8da9db',
+                    }]
+                };
+                const yellow_data = {
+                    labels: radar_labels,
+                    datasets: [{
+                        data: [85, 79, 60, 51, 66],
+                        fill: true,
+                        backgroundColor: 'transparent',
+                        borderColor: '#ffd44b',
+                    }]
+                };
+                new Chart("green_radar", {
+                    type: "radar",
+                    data: green_data,
+                    options: {
+                        elements: {
+                            line: {
+                                borderWidth: 3
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        }
                     }
-                },
-                plugins:{
-                    legend:{ display: false}
-                }
-            }
-        });
-        new Chart("blue_radar", {
-            type: "radar",
-            data: blue_data,
-            options: {
-                elements: {
-                    line: {
-                        borderWidth: 3
+                });
+                new Chart("blue_radar", {
+                    type: "radar",
+                    data: blue_data,
+                    options: {
+                        elements: {
+                            line: {
+                                borderWidth: 3
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        }
                     }
-                },
-                plugins:{
-                    legend:{ display: false}
-                }
-            }
-        });
-        new Chart("yellow_radar", {
-            type: "radar",
-            data: yellow_data,
-            options: {
-                elements: {
-                    line: {
-                        borderWidth: 3
+                });
+                new Chart("yellow_radar", {
+                    type: "radar",
+                    data: yellow_data,
+                    options: {
+                        elements: {
+                            line: {
+                                borderWidth: 3
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        }
                     }
-                },
-                plugins:{
-                    legend:{ display: false}
-                }
-            }
-        });
-        // ---
-    })
- </script>
+                });
+                // ---
+            })
+        </script>

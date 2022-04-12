@@ -1,8 +1,5 @@
 .c-store {
     padding: 4%;
-    .nav-item {
-        width: calc((100% / 6) - 2px);
-    }
     &__header {
         margin-top: 25px;
     }
@@ -14,18 +11,51 @@
             margin-bottom: 10px;
         }
     }
-    .c-box {
+    .c-message {
         margin-top: 20px;
     }
     tbody,
     td,
     th {
+        padding: 8px 4px;
+        font-weight: 400;
+        vertical-align: middle;
         border: 1px solid #DEE2E6!important;
     }
     .c-table50 {
         th,
         td {
             width: 50%;
+        }
+    }
+    &__body {
+        margin: 25px 0;
+        .c-storesilver {
+            background: #f2f2f2;
+        }
+        .c-storeblue {
+            font-size: 1.4rem;
+            background: #e8ebf5;
+        }
+        .c-storeyellow {
+            background: #ffe699;
+        }
+        .c-storegreen {
+            background: #e8e7c7;
+        }
+    }
+    &__footer {
+        margin-top: 30px;
+    }
+    &__content {
+        margin: 15px 0;
+        li {
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            color: #bfaa4a;
+        }
+        p {
+            color: #000;
         }
     }
 }

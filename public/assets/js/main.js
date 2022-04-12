@@ -6,6 +6,7 @@ $(document).ready(function () {
     "padding-bottom": $("#the_footer").outerHeight(),
   });
 
+<<<<<<< HEAD
   // Header icon click
   $(".menu-trigger").click(function () {
     $(this).toggleClass("active");
@@ -117,3 +118,29 @@ function js_calendar() {
   });
   generateCalendar(currentDate);
 }
+=======
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - $('.c-headerv2').outerHeight()
+            }, 800);
+        }
+    });
+    //Add padding top
+    $('main').css({
+        'padding-top': $('#the_header').outerHeight(),
+        'padding-bottom': $('#the_footer').outerHeight()
+    })
+
+    // Header icon click
+    $(".menu-trigger").click(function() {
+            $(this).toggleClass('active');
+            $('.c-header__menu').toggleClass('is-active');
+
+        })
+        //Add padding top
+    $('main').css('padding-top', $('.c-header').outerHeight())
+    $('main').css('padding-top', $('.c-headerv2').outerHeight())
+    setTimeout(function() {
+        $('.c-loading').fadeOut(1000);
+    }, 1000)
+})
+>>>>>>> master

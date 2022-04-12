@@ -13,26 +13,39 @@
     <main class="p-store">
         <div class="c-store">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <!--▼ KPI ▼-->
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#s1" type="button" role="tab" aria-selected="true">KPI</button>
                 </li>
+                <!--▲ KPI ▲-->
+                <!--▼ QSC ▼-->
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" data-bs-toggle="tab" data-bs-target="#s2" type="button" role="tab" aria-selected="false">QSC</button>
                 </li>
+                <!--▲ QSC ▲-->
+                <!--▼ 詳細 1 ▼-->
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" data-bs-toggle="tab" data-bs-target="#s3" type="button" role="tab" aria-selected="false">詳細①</button>
                 </li>
+                <!--▲ 詳細 1 ▲-->
+                <!--▼ 詳細 2 ▼-->
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" data-bs-toggle="tab" data-bs-target="#s4" type="button" role="tab" aria-selected="false">詳細②</button>
                 </li>
+                <!--▲ 詳細 2 ▲-->
+                <!--▼ 詳細 3 ▼-->
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" data-bs-toggle="tab" data-bs-target="#s5" type="button" role="tab" aria-selected="false">詳細③</button>
                 </li>
+                <!--▲ 詳細 3 ▲-->
+                <!--▼ 詳細 4 ▼-->
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" data-bs-toggle="tab" data-bs-target="#s6" type="button" role="tab" aria-selected="false">詳細④</button>
                 </li>
+                <!--▲ 詳細 4 ▲-->
             </ul>
             <div class="tab-content" id="myTabContent">
+                <!--▼ KPI ▼-->
                 <div class="tab-pane fade show active" id="s1" role="tabpanel">
                     <div class="c-store__header">
                         <div class="row c-store__name align-items-center">
@@ -50,55 +63,55 @@
                             <i class="fas fa-house-chimney"></i>
                             <p>現在のKPI進捗</p>
                         </div>
-                        <div class="c-box c-box--green">
-                            <div class="c-box__heading">
+                        <div class="c-message c-message--green">
+                            <div class="c-message__heading">
                                 <p>達成率</p>
                             </div>
-                            <div class="c-box__content">
-                                <p class="c-box__big">
+                            <div class="c-message__content">
+                                <p class="c-message__big">
                                     58点
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="c-store__body">
-                        <table class="table table-bordered c-table50">
-                            <tbody>
+                        <table class="table table-bordered c-table50 ">
+                            <tbody class="text-center">
                                 <tr>
-                                    <th>定着率</th>
-                                    <td>80.0%
+                                    <th class="c-storesilver">定着率</th>
+                                    <td class="c-storeblue">80.0%
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>時間当たり達成回数
+                                    <th class="c-storesilver">時間当たり達成回数
                                     </th>
-                                    <td>10
+                                    <td class="c-storeblue">10
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>Q（点数）</th>
-                                    <td>40
+                                    <th class="c-storesilver">Q（点数）</th>
+                                    <td class="c-storeblue">40
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>S（点数）</th>
-                                    <td>40
+                                    <th class="c-storesilver">S（点数）</th>
+                                    <td class="c-storeblue">40
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>C（点数）</th>
-                                    <td>40
+                                    <th class="c-storesilver">C（点数）</th>
+                                    <td class="c-storeblue">40
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>運営（点数）</th>
-                                    <td>40
+                                    <th class="c-storesilver">運営（点数）</th>
+                                    <td class="c-storeblue">40
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>売上予算の達成率
+                                    <th class="c-storesilver">売上予算の達成率
                                     </th>
-                                    <td>91.8%
+                                    <td class="c-storeblue">91.8%
                                     </td>
                                 </tr>
                             </tbody>
@@ -106,13 +119,274 @@
 
                     </div>
                 </div>
-                <div class="tab-pane fade" id="s2" role="tabpanel">.2..</div>
-                <div class="tab-pane fade" id="s3" role="tabpanel">.3..</div>
-                <div class="tab-pane fade" id="s4" role="tabpanel">...</div>
-                <div class="tab-pane fade" id="s5" role="tabpanel">.2..</div>
-                <div class="tab-pane fade" id="s6" role="tabpanel">.3..</div>
+                <!--▲ KPI ▲-->
+                <!--▼ QSC ▼-->
+                <div class="tab-pane fade" id="s2" role="tabpanel">
+                    <div class="c-store__header">
+                        <div class="row c-store__name align-items-center">
+                            <div class="col-3">
+                                <img src="./assets/img/logo-image.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-9">
+                                <h3>
+                                    梅田店
+                                </h3>
+                                <p>(〇〇坪 / 〇〇席)</p>
+                            </div>
+                        </div>
+                        <div class="c-titleline c-titleline--green">
+                            <i class="fas fa-house-chimney"></i>
+                            <p>QSC結果</p>
+                        </div>
+                        <div class="c-message c-message--green">
+                            <div class="c-message__heading">
+                                <p>ランク
+                                </p>
+                            </div>
+                            <div class="c-message__content">
+                                <p class="c-message__big">
+                                    B
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-store__body">
+                        <table class="table text-center">
+                            <tr>
+                                <th scope="row" rowspan="2" class="c-storesilver">項目</th>
+                                <td colspan="2" class="c-storegreen">前回</td>
+                                <td colspan="2" class="c-storeyellow">今回</td>
+
+                            </tr>
+                            <tr>
+                                <td class="c-storegreen">得点
+                                </td>
+                                <td class="c-storegreen">達成率
+                                </td>
+                                <td class="c-storeyellow">得点
+                                </td>
+                                <td class="c-storeyellow">達成率
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row " class="c-storesilver">店舗環境</th>
+                                <td class="c-storeblue">10</td>
+                                <td class="c-storeblue">52.6％</td>
+                                <td class="c-storeblue">10</td>
+                                <td class="c-storeblue">52.6％</td>
+                            </tr>
+                            <tr>
+                                <th scope="row " class="c-storesilver">基本事項</th>
+                                <td class="c-storeblue">6</td>
+                                <td class="c-storeblue">85.7％
+                                </td>
+                                <td class="c-storeblue">6</td>
+                                <td class="c-storeblue">85.7％</td>
+                            </tr>
+                            <tr>
+                                <th scope="row " class="c-storesilver">サービス
+                                </th>
+                                <td class="c-storeblue">37</td>
+                                <td class="c-storeblue">61.7％</td>
+                                <td class="c-storeblue">37</td>
+                                <td class="c-storeblue">61.7％</td>
+                            </tr>
+                            <tr>
+                                <th scope="row " class="c-storesilver">厨房衛生
+                                </th>
+                                <td class="c-storeblue">8</td>
+                                <td class="c-storeblue">53.3％</td>
+                                <td class="c-storeblue">8</td>
+                                <td class="c-storeblue">53.3％</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="c-storesilver">合計
+                                </th>
+                                <td class="c-storegreen">61
+                                </td>
+                                <td class="c-storegreen">60.4%
+                                </td>
+                                <td class="c-storeyellow">61%
+                                </td>
+                                <td class="c-storeyellow">60.4%
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="1" class="c-storesilver">ランク
+                                </th>
+                                <td colspan="2" class="c-storegreen fw-bold">B</td>
+                                <td colspan="2" class="c-storeyellow fw-bold">B</td>
+
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+                <!--▲ QSC ▲-->
+                <!--▼ 詳細 1 ▼-->
+                <div class="tab-pane fade " id="s3" role="tabpanel ">
+                    <div class="c-store__header">
+                        <div class="row c-store__name align-items-center">
+                            <div class="col-3">
+                                <img src="./assets/img/logo-image.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-9">
+                                <h3>
+                                    梅田店
+                                </h3>
+                                <p>(〇〇坪 / 〇〇席)</p>
+                            </div>
+                        </div>
+
+                        <div class="c-message c-message--dark">
+                            <div class="c-message__heading">
+                                <p>店舗環境
+                                </p>
+                            </div>
+                            <div class="c-message__content">
+                                <p>直近実施日：<span>2021.03.19</span>
+                                </p>
+                                <p class="c-message__big">
+                                    52点
+                                </p>
+                                <p>( 3回平均：48点 )</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-store__body">
+                        <canvas id="store_chart_01" width="822" height="500"></canvas>
+                    </div>
+                    <div class="c-store__footer">
+                        <div class="c-titlebox">
+                            <p><span>コメント</span>（直近実施分のみ）</p>
+                        </div>
+                        <ul class="c-store__content">
+
+                            <li>
+                                <p>店頭前の道路にゴミもなく店頭ゴミ箱も清掃されている</p>
+                                ー 店前の清掃が汚い(ビル入り口まで)
+                            </li>
+                            <li>
+                                <p>店頭看板は通行人から見やすい位置に設置されていて、汚れがない</p>
+                                ー もっと頑張れ
+                            </li>
+                            <li>
+                                <p>店頭前の道路にゴミもなく店頭ゴミ箱も清掃されている</p>
+                                ー 店前の清掃が汚い(ビル入り口まで)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--▲ 詳細 1 ▲-->
+                <!--▼ 詳細 2 ▼-->
+                <div class="tab-pane fade " id="s4" role="tabpanel ">
+                    <div class="c-store__header">
+                        <div class="row c-store__name align-items-center">
+                            <div class="col-3">
+                                <img src="./assets/img/logo-image.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-9">
+                                <h3>
+                                    梅田店
+                                </h3>
+                                <p>(〇〇坪 / 〇〇席)</p>
+                            </div>
+                        </div>
+
+                        <div class="c-message c-message--dark">
+                            <div class="c-message__heading">
+                                <p>基本事項
+                                </p>
+                            </div>
+                            <div class="c-message__content">
+                                <p>直近実施日：<span>2021.03.19</span>
+                                </p>
+                                <p class="c-message__big">
+                                    85点
+                                </p>
+                                <p>( 3回平均：79点 )</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-store__body">
+                        <canvas id="store_chart_02" width="822" height="500"></canvas>
+                    </div>
+                    <div class="c-store__footer">
+                        <div class="c-titlebox">
+                            <p><span>コメント</span>（直近実施分のみ）</p>
+                        </div>
+                        <ul class="c-store__content">
+
+                            <li>
+                                <p>内容</p>
+                                ー コメント
+                            </li>
+                            <li>
+                                <p>内容</p>
+                                ー コメント
+                            </li>
+                            <li>
+                                <p>内容</p>
+                                ー コメント
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--▲ 詳細 2 ▲-->
+                <!--▼ 詳細 3 ▼-->
+                <div class="tab-pane fade " id="s5" role="tabpanel ">詳細 3</div>
+                <!--▲ 詳細 3 ▲-->
+                <!--▼ 詳細 4 ▼-->
+                <div class="tab-pane fade " id="s6" role="tabpanel ">詳細 4</div>
+                <!--▲ 詳細 4 ▲-->
             </div>
         </div>
     </main>
     <!--▲ Content are ▲-->
     <%- include('inc/_footer'); %>
+        <script>
+            var xValues = ["前々回", "前回", "今回"];
+            var yValues1 = [89, 52, 70];
+            var yValues2 = [66, 76, 86];
+            var barColors = ["#bfbfbf", "#e2e1b8", "#ffe699"];
+
+            new Chart("store_chart_01", {
+                type: "bar",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues1
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+            $('#store_chart_01').height(200)
+
+            new Chart("store_chart_02", {
+                type: "bar",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues2
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+            $('#store_chart_02').height(200)
+        </script>

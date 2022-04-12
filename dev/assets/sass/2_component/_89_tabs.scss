@@ -1,18 +1,12 @@
 .nav-tabs {
-    // justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
     padding: 0 5px;
     border-bottom: 1px solid #a5a5a5;
-    button {
-        // width: 100%;
-        &.active {}
-    }
-    li{
-        &:not(:last-child){
-            margin-right: 3px;
-        }
-    }
     .nav-link {
-        padding: 6px 3px;
+        min-height: 40px;
+        padding: 0;
         border: 1px solid #a5a5a5;
         color: #a5a5a5;
         font-weight: bold;
@@ -22,6 +16,13 @@
             color: #fff;
             background: #bfbfbf;
             border-color: #a5a5a5;
+        }
+    }
+    .nav-item {
+        margin-right: 3px;
+        min-width: 75px;
+        button {
+            width: 100%;
         }
     }
 }
