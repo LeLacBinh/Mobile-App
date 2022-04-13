@@ -19,7 +19,7 @@ $(document).ready(function () {
 });
 
 // --- Create a Simple Calendar ---
-function js_calendar() {
+function js_calendar(type_calendar) {
   var currentDate = new Date();
   function generateCalendar(d) {
     function monthDays(month, year) {
@@ -73,11 +73,19 @@ function js_calendar() {
             for( var _i = 0; _i < notice.length; _i++ ){
               if(notice[_i].date === the_date){
                 no_note = false;
-                cal[i].push('<td onclick="calendar_show_content(this)" class="day" data-date="'+ the_date +'" data-note="'+ _i +'"><span>' + day++ + '</span><p>' + notice[_i].desc.earn + '</p></td>');
+                if(type_calendar == 1){
+                  cal[i].push('<td onclick="calendar_show_content(this)" class="day" data-date="'+ the_date +'" data-note="'+ _i +'"><span>' + day++ + '</span><p>' + notice[_i].desc.earn + '</p></td>');
+                }else if(type_calendar == 2){
+                  cal[i].push('<td onclick="calendar_show_content_2(this)" class="day" data-date="'+ the_date +'" data-note="'+ _i +'"><span>' + day++ + '</span><p>' + notice[_i].desc.earn + '</p></td>');
+                }
               }
             }
             if(no_note){
-              cal[i].push('<td onclick="calendar_show_content(this)" class="day" data-date="'+ the_date +'" data-note="no"><span>' + day++ + '</span></td>');
+              if(type_calendar == 1){
+                cal[i].push('<td onclick="calendar_show_content(this)" class="day" data-date="'+ the_date +'" data-note="no"><span>' + day++ + '</span></td>');
+              }else if(type_calendar == 2){
+                cal[i].push('<td onclick="calendar_show_content_2(this)" class="day" data-date="'+ the_date +'" data-note="no"><span>' + day++ + '</span></td>');
+              }
             }
           }
         }
@@ -132,16 +140,16 @@ function js_calendar() {
 
 function calendar_show_content(_t){
   // Show Content Box
-  if(!$('.p-daily__content').hasClass('p-daily__content--show')){
-    $('.p-daily__content').addClass('p-daily__content--show')
+  if(!$('.c-event-calendar__content').hasClass('c-event-calendar__content--show')){
+    $('.c-event-calendar__content').addClass('c-event-calendar__content--show')
   }
   // Show detail information
   const note_id = $(_t).data('note')
   
   if(note_id != 'no'){
     const the_target = notice[note_id].desc
-    $('.p-daily__no-note').hide()
-    $('.p-daily__has-note').fadeIn(500)
+    $('.c-event-calendar__no-note').hide()
+    $('.c-event-calendar__has-note').fadeIn(500)
     // Replace the data
     $('#date_earn').html(the_target.earn)
     $('#date_pairs').html(the_target.pairs.lunch + the_target.pairs.dinner)
@@ -151,9 +159,37 @@ function calendar_show_content(_t){
     $('#date_people_lunch').html(the_target.people.lunch)
     $('#date_people_dinner').html(the_target.people.dinner)
   }else{
-    $('.p-daily__has-note').hide()
-    $('.p-daily__no-note').fadeIn(500)
+    $('.c-event-calendar__has-note').hide()
+    $('.c-event-calendar__no-note').fadeIn(500)
   }
   // Change The title Content box
-  $('.p-daily__head h3').html($(_t).data('date'))
+  $('.c-event-calendar__head h3').html($(_t).data('date'))
+}
+
+function calendar_show_content_2(_t){
+  // Show Content Box
+  if(!$('.c-event-calendar__content').hasClass('c-event-calendar__content--show')){
+    $('.c-event-calendar__content').addClass('c-event-calendar__content--show')
+  }
+  // Show detail information
+  const note_id = $(_t).data('note')
+  
+  if(note_id != 'no'){
+    const the_target = notice[note_id].desc
+    $('.c-event-calendar__no-note').hide()
+    $('.c-event-calendar__has-note').fadeIn(500)
+    // Replace the data
+    $('#date_earn').html(the_target.earn)
+    $('#date_pairs').html(the_target.pairs.lunch + the_target.pairs.dinner)
+    $('#date_pairs_lunch').html(the_target.pairs.lunch)
+    $('#date_pairs_dinner').html(the_target.pairs.dinner)
+    $('#date_people').html(the_target.people.lunch + the_target.people.dinner)
+    $('#date_people_lunch').html(the_target.people.lunch)
+    $('#date_people_dinner').html(the_target.people.dinner)
+  }else{
+    $('.c-event-calendar__has-note').hide()
+    $('.c-event-calendar__no-note').fadeIn(500)
+  }
+  // Change The title Content box
+  $('.c-event-calendar__head h3').html($(_t).data('date'))
 }
