@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    js_calendar()
   //Add padding top
   $("main").css({
     "padding-top": $("#the_header").outerHeight(),

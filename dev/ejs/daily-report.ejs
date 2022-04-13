@@ -79,12 +79,17 @@
                 </div>
                 <div class="p-daily__no-note">
                     <div class="container">
-                        <a href="#"><i class="fa-solid fa-circle-plus"></i>日報を入力する</a>
+                        <a href="add-daily-note.html"><i class="fa-solid fa-circle-plus"></i>日報を入力する</a>
                     </div>
                 </div>
             </div> 
         </div>
 </main>
+
+<!--▲ Header ▲-->
+<!--▼ Content area ▼-->
+<!--▲ Content are ▲-->
+<%- include('inc/_footer'); %>
 <script>
     // --- Add note for date ---
     var notice = [{
@@ -116,8 +121,7 @@
     }]
 
 // ---------
+$(document).ready(function () {
+    js_calendar()
+})
 </script>
-<!--▲ Header ▲-->
-<!--▼ Content area ▼-->
-<!--▲ Content are ▲-->
-<%- include('inc/_footer'); %>
