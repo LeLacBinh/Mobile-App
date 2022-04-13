@@ -1,18 +1,28 @@
 .c-challenge {
     padding: 4%;
     margin-bottom: 68px;
+    .c-infor {
+        margin: 15px 0;
+    }
     &__header {
         text-align: center;
-        margin: 0 27%;
+        margin: 0 18%;
         border-bottom: 2px solid #d8d8d8;
         padding-bottom: 5px;
         font-weight: bold;
-        color: #ff3300;
         p {
             font-size: 1.6rem;
             span {
                 font-size: 1.8rem;
             }
+        }
+        &__red {
+            color: #ff3300;
+        }
+        &--color {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
         }
     }
     &__body {
@@ -28,37 +38,6 @@
         &--blue {
             color: #8faadc;
         }
-    }
-    input[type="checkbox"] {
-        /* Add if not using autoprefixer */
-        -webkit-appearance: none;
-        /* Remove most all native input styles */
-        appearance: none;
-        /* For iOS < 15 */
-        background-color: #fff;
-        /* Not removed via appearance */
-        margin: 0 auto;
-        font: inherit;
-        color: currentColor;
-        width: 25px;
-        height: 25px;
-        border: 2px solid #bfbfbf;
-        display: grid;
-        place-content: center;
-    }
-    input[type="checkbox"]::before {
-        content: "";
-        width: 15px;
-        height: 15px;
-        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-        transform: scale(0);
-        transform-origin: bottom left;
-        transition: 120ms transform ease-in-out;
-        box-shadow: inset 1em 1em var(--form-control-color);
-        /* Windows High Contrast Mode */
-    }
-    input[type="checkbox"]:checked::before {
-        transform: scale(1);
     }
     .c-table {
         margin-bottom: 20px;

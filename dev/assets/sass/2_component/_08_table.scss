@@ -8,6 +8,37 @@
         border-collapse: collapse;
         border: 1px solid #dee2e6;
     }
+    &--disable {
+        tbody {
+            tr,
+            td {
+                background-color: #e2e2e2 !important;
+            }
+            input[type="checkbox"] {
+                display: none;
+            }
+        }
+    }
+    &--orange {
+        thead {
+            tr {
+                th {
+                    background-color: #e4a869;
+                }
+            }
+        }
+        tbody {
+            tr {
+                th {
+                    text-align: center;
+                    font-weight: 400;
+                }
+            }
+        }
+        input[type="checkbox"]::before {
+            background-color: #e4a869;
+        }
+    }
     &--green {
         thead {
             tr {

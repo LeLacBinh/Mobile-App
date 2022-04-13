@@ -98,13 +98,16 @@
 }
 
 .c-footerbtn {
+    max-width: 768px;
+    margin: 0 auto;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     padding: 15px 50px;
     background: rgba($color: #fff, $alpha: .8);
-    a {
+    a,
+    input[type=submit] {
         display: block;
     }
 }

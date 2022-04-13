@@ -1,11 +1,15 @@
 .c-self {
     padding: 4%;
+    .c-titleline {
+        margin-top: 25px;
+    }
     &__chart {
+        margin: 20px 0;
         display: flex;
         width: 100%;
         border-radius: 8px;
         overflow: hidden;
-        border: 2px solid red;
+        border: 2px solid #e4a869;
         &__item {
             width: calc(100% / 3);
             text-align: center;
@@ -17,14 +21,33 @@
             }
         }
         &__header {
+            color: #fff;
             padding: 8px;
-            background: red;
-            border-right: 2px solid blue;
+            background: #e4a869;
+            border-right: 2px solid #ffffff;
         }
         &__content {
             padding: 15px 5px;
             font-size: 2rem;
-            border-right: 2px solid red;
+            border-right: 2px solid #e4a869;
+        }
+    }
+    &__group {
+        margin-top: 15px;
+        p,
+        label {
+            padding-left: 8px;
+        }
+    }
+    &__date {
+        margin-bottom: 8px;
+    }
+    .c-table {
+        margin-top: 15px;
+        tr,
+        th,
+        td {
+            border: 1px solid #7f7f7f;
         }
     }
 }
