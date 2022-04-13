@@ -1,70 +1,71 @@
 <%- include('inc/_headerv2'); %>
-<!--▼ Header ▼-->
-<header class="c-headerv2" id="the_header">
-    <a href="javascript:history.back()" class="c-headerv2__back">
-        <i class="fa-solid fa-angle-left"></i>
-    </a>
-    <p>
-        日報報告
-    </p>
-</header>
-<main class="p-addDaily">
-    <div class="c-date-title">
-        <div class="container">
-            <h2><span class="js-year">2022</span>年<span class="js-month">4</span>月<span class="js-date">7</span>日</h2>
-        </div>
-    </div>
-    <form action="">
-        <div class="p-addDaily__item">
-            <h5>売上</h5>
-            <div class="p-addDaily__row">
-                <p>
-                    <label for="earn">売上<span>(税抜)</span></label>
-                </p>
-                <input type="text" id="earn" name="earn">
-                <span class="unit">円</span>
+    <!--▼ Header ▼-->
+    <header class="c-headerv2" id="the_header">
+        <a href="javascript:history.back()" class="c-headerv2__back">
+            <i class="fa-solid fa-angle-left"></i>
+        </a>
+        <p>
+            日報報告
+        </p>
+    </header>
+    <main class="p-addDaily">
+        <div class="c-date-title">
+            <div class="container">
+                <h2><span class="js-year">2022</span>年<span class="js-month">4</span>月<span class="js-date">7</span>日
+                </h2>
             </div>
         </div>
-        <div class="p-addDaily__item">
-            <h5>組数</h5>
-            <div class="p-addDaily__row">
-                <p>
-                    <label for="pairs_luch">ランチ</label>
-                </p>
-                <input type="text" id="pairs_luch" name="pairs_luch">
-                <span class="unit">組</span>
+        <form action="">
+            <div class="p-addDaily__item">
+                <h5>売上</h5>
+                <div class="p-addDaily__row">
+                    <p>
+                        <label for="earn">売上<span>(税抜)</span></label>
+                    </p>
+                    <input type="text" id="earn" name="earn">
+                    <span class="unit">円</span>
+                </div>
             </div>
-            <div class="p-addDaily__row">
-                <p>
-                    <label for="pairs_dinner">ディナー</label>
-                </p>
-                <input type="text" id="pairs_dinner" name="pairs_dinner">
-                <span class="unit">組</span>
+            <div class="p-addDaily__item">
+                <h5>組数</h5>
+                <div class="p-addDaily__row">
+                    <p>
+                        <label for="pairs_luch">ランチ</label>
+                    </p>
+                    <input type="text" id="pairs_luch" name="pairs_luch">
+                    <span class="unit">組</span>
+                </div>
+                <div class="p-addDaily__row">
+                    <p>
+                        <label for="pairs_dinner">ディナー</label>
+                    </p>
+                    <input type="text" id="pairs_dinner" name="pairs_dinner">
+                    <span class="unit">組</span>
+                </div>
             </div>
-        </div>
-        <div class="p-addDaily__item">
-            <h5>人数</h5>
-            <div class="p-addDaily__row">
-                <p>
-                    <label for="people_luch">ランチ</label>
-                </p>
-                <input type="text" id="people_luch" name="people_luch">
-                <span class="unit">組</span>
+            <div class="p-addDaily__item">
+                <h5>人数</h5>
+                <div class="p-addDaily__row">
+                    <p>
+                        <label for="people_luch">ランチ</label>
+                    </p>
+                    <input type="text" id="people_luch" name="people_luch">
+                    <span class="unit">組</span>
+                </div>
+                <div class="p-addDaily__row">
+                    <p>
+                        <label for="people_dinner">ディナー</label>
+                    </p>
+                    <input type="text" id="people_dinner" name="people_dinner">
+                    <span class="unit">組</span>
+                </div>
             </div>
-            <div class="p-addDaily__row">
-                <p>
-                    <label for="people_dinner">ディナー</label>
-                </p>
-                <input type="text" id="people_dinner" name="people_dinner">
-                <span class="unit">組</span>
+            <div class="c-footerbtn">
+                <input type="submit" value="日報を登録する" class="c-btn c-btn--orange">
             </div>
-        </div>
-        <div class="c-footerbtn">
-            <input type="submit" value="日報を登録する">
-        </div>
-    </form>
-</main>
-<!--▲ Header ▲-->
-<!--▼ Content area ▼-->
-<!--▲ Content are ▲-->
-<%- include('inc/_footerv2'); %>
+        </form>
+    </main>
+    <!--▲ Header ▲-->
+    <!--▼ Content area ▼-->
+    <!--▲ Content are ▲-->
+    <%- include('inc/_footerv2'); %>
