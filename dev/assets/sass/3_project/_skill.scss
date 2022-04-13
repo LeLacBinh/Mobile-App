@@ -65,6 +65,11 @@
                 margin-bottom: 20px;
             }
         }
+        .box{
+            width: 90%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
     }
     &__challenge{
         width: 90%;
@@ -75,7 +80,8 @@
         background-color: #f2f2f2;
         color: #a5a5a5;
         height: 40vw;
-        max-height: 300px;
+        max-height: 150px;
+        max-width: 300px;
         a{
             display: flex;
             justify-content: center;
