@@ -33,7 +33,6 @@
                 <!--▲ 詳細 3 ▲-->
             </ul>
             <div class="tab-content" id="myTabContent">
-
                 <!--▼ 詳細 1 ▼-->
                 <div class="tab-pane fade active show" id="s3" role="tabpanel ">
                     <div class="c-infor">
@@ -91,27 +90,152 @@
                             </div>
                         </div>
                         <div class="c-self__chart__item">
-                            <p class="c-self__chart__header">前々回</p>
+                            <p class="c-self__chart__header">前回</p>
                             <div class="c-self__chart__content">
-                                <p>67点</p>
+                                <p>72点</p>
                             </div>
                         </div>
                         <div class="c-self__chart__item">
-                            <p class="c-self__chart__header">前々回</p>
+                            <p class="c-self__chart__header">今回</p>
                             <div class="c-self__chart__content">
-                                <p>67点</p>
+                                <p>80点</p>
                             </div>
                         </div>
                     </div>
+                    <canvas id="mixed-chart" width="800" height="450"></canvas>
                 </div>
                 <!--▲ 詳細 1 ▲-->
                 <!--▼ 詳細 2 ▼-->
                 <div class="tab-pane fade " id="s4" role="tabpanel ">
-                    ---02
+                    <div class="c-self__group">
+                        <p class="c-self__date">
+                            評価承認日時：<span>2021.03.19</span>
+
+                        </p>
+                        <label for="comment1">承認者：加藤 一郎</label>
+                        <textarea name="comment1" id="comment1" placeholder="コメント：" class="c-input c-input--textarea1"></textarea>
+                    </div>
+                    <div class="c-self__group">
+                        <p class="c-self__date">
+                            評価承認日時：<span>2021.01.30</span>
+
+                        </p>
+                        <label for="comment1">承認者：加藤 一郎</label>
+                        <textarea name="comment1" id="comment1" placeholder="コメント：" class="c-input c-input--textarea1"></textarea>
+                    </div>
+                    <div class="c-self__group">
+                        <p class="c-self__date">
+                            評価承認日時：<span>2020.11.21</span>
+
+                        </p>
+                        <label for="comment1">承認者：加藤 一郎</label>
+                        <textarea name="comment1" id="comment1" placeholder="コメント：" class="c-input c-input--textarea1"></textarea>
+                    </div>
                 </div>
                 <!--▲ 詳細 2 ▲-->
                 <!--▼ 詳細 3 ▼-->
-                <div class="tab-pane fade " id="s5" role="tabpanel ">詳細 3</div>
+                <div class="tab-pane fade " id="s5" role="tabpanel ">
+                    <table class="c-table c-table--orange c-table--disable ">
+                        <thead>
+                            <tr>
+                                <th scope="col">分類</th>
+                                <th scope="col">項目</th>
+                                <th scope="col">習得</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">仕事
+                                </th>
+                                <td>お客様来店には率先して明るい挨拶や返事ができている</td>
+                                <td>
+                                    <input type="checkbox" class="c-checkboxcustom" name="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">仕事</th>
+                                <td>来店への挨拶はその場から離れていてもお伝えすることができている（復唱）</td>
+                                <td>
+                                    <input type="checkbox" class="c-checkboxcustom" name="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">仕事</th>
+                                <td>お客様来店時に席への誘導、声掛けが3秒以内にできている</td>
+                                <td>
+                                    <input type="checkbox" class="c-checkboxcustom" name="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">仕事</th>
+                                <td>お客様の顔（特に目）を見て接客できている</td>
+                                <td>
+                                    <input type="checkbox" class="c-checkboxcustom" name="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">仲間</th>
+                                <td>お冷・おしぼりを着席後速やかに提供できている</td>
+                                <td>
+                                    <input type="checkbox" class="c-checkboxcustom" name="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">仲間</th>
+                                <td>お冷・おしぼりを正しい位置・方法で提供できている（お客様の正面におく・コップの縁を触らない）</td>
+                                <td>
+                                    <input type="checkbox" class="c-checkboxcustom" name="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">仲間</th>
+                                <td>小さなお子様がいらっしゃった場合は取り皿、スプーン、フォークを自ら気づいて提供できている</td>
+                                <td>
+                                    <input type="checkbox" class="c-checkboxcustom" name="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">仲間</th>
+                                <td>フード・ドリンクすべての名前を憶えている</td>
+                                <td>
+                                    <input type="checkbox" class="c-checkboxcustom" name="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">会社</th>
+                                <td>セットの内容・セットに出来る組み合わせ・おすすめ商品を把握している</td>
+                                <td>
+                                    <input type="checkbox" class="c-checkboxcustom" name="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">会社</th>
+                                <td>すべてのドリンクの作成、ファーストドリンク3分以内
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="c-checkboxcustom" name="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">会社</th>
+                                <td>メニューを決めかねているお客様におすすめの声掛けができる
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="c-checkboxcustom" name="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">会社</th>
+                                <td>従業員同士での商品の呼び方（略語）を正しく把握し使用できている
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="c-checkboxcustom" name="checkbox" checked>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
                 <!--▲ 詳細 3 ▲-->
                 <!--▼ 詳細 4 ▼-->
                 <div class="tab-pane fade " id="s6" role="tabpanel ">詳細 4</div>
@@ -120,4 +244,65 @@
         </div>
     </main>
     <!--▲ Content are ▲-->
-    <%- include('inc/_footer'); %>
+    <%- include('inc/_footerv2'); %>
+        <script>
+            // Click change background checkbox
+            $('.c-table--orange input').each(function() {
+                if ($(this).is(':checked')) {
+                    $(this).parent().css({
+                        "backgroundColor": "rgba(228, 168, 105, 0.5)"
+                    });
+                };
+                $(this).change(function() {
+                    if (this.checked) {
+                        $(this).parent().css({
+                            "backgroundColor": "rgba(228, 168, 105, 0.5)"
+                        });
+                    } else {
+                        $(this).parent().css({
+                            "backgroundColor": "transparent"
+                        });
+
+                    }
+                });
+            });
+            //Setting mixed-chart
+            new Chart(document.getElementById("mixed-chart"), {
+                type: 'bar',
+                data: {
+                    labels: ["仕事好き", "仲間好き", "会社好き", "責任"],
+                    datasets: [{
+                        label: "3回平均",
+                        type: "line",
+                        borderColor: "#ed7d31",
+                        data: [408, 547, 675, 734],
+                        fill: false
+                    }, {
+                        label: "前々回",
+                        type: "bar",
+                        backgroundColor: "#bfbfbf",
+                        data: [408, 547, 675, 734],
+                    }, {
+                        label: "前回",
+                        type: "bar",
+                        backgroundColor: "#ffe699",
+                        data: [133, 221, 783, 2478]
+                    }, {
+                        label: "今回",
+                        type: "bar",
+                        backgroundColor: "#e4a869",
+                        data: [33, 226, 983, 2178]
+                    }]
+                },
+                options: {
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            fillStyle: '#000',
+                            strokeStyle: '#000',
+                        },
+
+                    }
+                }
+            });
+        </script>
