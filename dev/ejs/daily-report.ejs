@@ -9,41 +9,42 @@
     </p>
 </header>
 <main class="p-daily">
-        <div class="c-date-title">
-            <div class="container">
-                <h2><span class="js-year">2022</span>年<span class="js-month">4</span>月</h2>
-            </div>
+    <div class="c-date-title">
+        <div class="container">
+            <h2><span class="js-year">2022</span>年<span class="js-month">4</span>月</h2>
         </div>
-        <div class="p-daily__summary">
-            <div class="container">
-                <table>
-                    <tr>
-                        <th>売上目標</th>
-                        <td>
-                            6,000,000<br>
-                        <span>(200,000 /日)</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>現在の売上</th>
-                        <td>
-                            3,000,000<br>
-                            <span>(達成率 50%)</span>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+    </div>
+    <div class="p-daily__summary">
+        <div class="container">
+            <table>
+                <tr>
+                    <th>売上目標</th>
+                    <td>
+                        6,000,000<br>
+                    <span>(200,000 /日)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>現在の売上</th>
+                    <td>
+                        3,000,000<br>
+                        <span>(達成率 50%)</span>
+                    </td>
+                </tr>
+            </table>
         </div>
-        <h2 class="p-daily__table-title">2022</span>年<span class="js-month">4</span>月</h3>
-        <table class="p-daily__table js-table"></table>
-        <div class="p-daily__infor">
-            <div class="p-daily__content">
-                <div class="p-daily__head">
+    </div>
+    <section class="c-event-calendar">
+        <h2 class="c-event-calendar__table-title">2022</span>年<span class="js-month">4</span>月</h3>
+        <table class="c-event-calendar_table js-table"></table>
+        <div class="c-event-calendar__infor">
+            <div class="c-event-calendar__content">
+                <div class="c-event-calendar__head">
                     <div class="container">
                         <h3>2021年 4月6日 (火)</h3>
                     </div>
                 </div>
-                <div class="p-daily__has-note">
+                <div class="c-event-calendar__has-note">
                     <div class="container">
                         <ul>
                             <li>
@@ -77,13 +78,15 @@
                         </ul>
                     </div>
                 </div>
-                <div class="p-daily__no-note">
+                <div class="c-event-calendar__no-note">
                     <div class="container">
                         <a href="add-daily-note.html"><i class="fa-solid fa-circle-plus"></i>日報を入力する</a>
                     </div>
                 </div>
             </div> 
         </div>
+    </section>
+    
 </main>
 
 <!--▲ Header ▲-->
@@ -122,6 +125,6 @@
 
 // ---------
 $(document).ready(function () {
-    js_calendar()
+    js_calendar(1)
 })
 </script>
