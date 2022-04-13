@@ -9,14 +9,114 @@
     </p>
 </header>
 <main class="p-daily">
-    <div class="container" id="main">
-        <div class="row">
-            <div class="col">
-                <table class="p-daily__table js-table"></table>
+        <div class="c-date-title">
+            <div class="container">
+                <h2><span class="js-year">2022</span>年<span class="js-month">4</span>月</h2>
             </div>
         </div>
-    </div>
+        <div class="p-daily__summary">
+            <div class="container">
+                <table>
+                    <tr>
+                        <th>売上目標</th>
+                        <td>
+                            6,000,000<br>
+                        <span>(200,000 /日)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>現在の売上</th>
+                        <td>
+                            3,000,000<br>
+                            <span>(達成率 50%)</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <h2 class="p-daily__table-title">2022</span>年<span class="js-month">4</span>月</h3>
+        <table class="p-daily__table js-table"></table>
+        <div class="p-daily__infor">
+            <div class="p-daily__content">
+                <div class="p-daily__head">
+                    <div class="container">
+                        <h3>2021年 4月6日 (火)</h3>
+                    </div>
+                </div>
+                <div class="p-daily__has-note">
+                    <div class="container">
+                        <ul>
+                            <li>
+                                <p>売上</p>
+                                <p><span id="date_earn">100</span>円</p>
+                            </li>
+                            <li>
+                                <p>組数合計</p>
+                                <p><span id="date_pairs">279</span>組</p>
+                            </li>
+                            <li>
+                                <p>(ランチ)</p>
+                                <p><span id="date_pairs_lunch">205</span>組</p>
+                            </li>
+                            <li>
+                                <p>(ディナー)</p>
+                                <p><span id="date_pairs_dinner">74</span>組</p>
+                            </li>
+                            <li>
+                                <p>人数合計</p>
+                                <p><span id="date_people">279</span>人</p>
+                            </li>
+                            <li>
+                                <p>(ランチ)</p>
+                                <p><span id="date_people_lunch">205</span>人</p>
+                            </li>
+                            <li>
+                                <p>(ディナー)</p>
+                                <p><span id="date_people_dinner">74</span>人</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-daily__no-note">
+                    <div class="container">
+                        <a href="#"><i class="fa-solid fa-circle-plus"></i>日報を入力する</a>
+                    </div>
+                </div>
+            </div> 
+        </div>
 </main>
+<script>
+    // --- Add note for date ---
+    var notice = [{
+    date: "2022年4月1日",
+    desc: {
+        earn: 3800,
+        pairs:{
+            lunch: 80,
+            dinner: 100
+        },
+        people:{
+            lunch: 100,
+            dinner: 200
+        }
+    }
+    },{
+    date: "2022年4月19日",
+    desc: {
+        earn: 7000,
+        pairs:{
+            lunch: 500,
+            dinner: 1000
+        },
+        people:{
+            lunch: 300,
+            dinner: 500
+        }
+    }
+    }]
+
+// ---------
+</script>
 <!--▲ Header ▲-->
 <!--▼ Content area ▼-->
 <!--▲ Content are ▲-->
