@@ -20,7 +20,6 @@ $(document).ready(function () {
 
 // --- Create a Simple Calendar ---
 function js_calendar(type_calendar) {
-  console.log(type_calendar);
   var currentDate = new Date();
   function generateCalendar(d) {
     function monthDays(month, year) {
@@ -75,10 +74,8 @@ function js_calendar(type_calendar) {
               if(notice[_i].date === the_date){
                 no_note = false;
                 if(type_calendar == 1){
-                  console.log(true);
                   cal[i].push('<td onclick="calendar_show_content(this)" class="day" data-date="'+ the_date +'" data-note="'+ _i +'"><span>' + day++ + '</span><p>' + notice[_i].desc.earn + '</p></td>');
                 }else if(type_calendar == 2){
-                  console.log(false);
                   cal[i].push('<td onclick="calendar_show_content_2(this)" class="day" data-date="'+ the_date +'" data-note="'+ _i +'"><span>' + day++ + '</span><p>' + notice[_i].desc.earn + '</p></td>');
                 }
               }
