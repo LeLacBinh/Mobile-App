@@ -76,7 +76,12 @@ function js_calendar(type_calendar) {
                 if(type_calendar == 1){
                   cal[i].push('<td onclick="calendar_show_content(this)" class="day" data-date="'+ the_date +'" data-note="'+ _i +'"><span>' + day++ + '</span><p>' + notice[_i].desc.earn + '</p></td>');
                 }else if(type_calendar == 2){
-                  cal[i].push('<td onclick="calendar_show_content_2(this)" class="day" data-date="'+ the_date +'" data-note="'+ _i +'"><span>' + day++ + '</span><p>' + notice[_i].desc.earn + '</p></td>');
+                  let the_list = "<ul>"
+                  for (_list = 0; _list < Object.values(notice[_i].items).length; _list++){
+                    the_list += "<li class='"+notice[_i].items[_list].background+"'>"+notice[_i].items[_list].labels+"</li>"
+                  }
+                  the_list += "</ul>"
+                  cal[i].push('<td onclick="calendar_show_content_2(this)" class="day" data-date="'+ the_date +'" data-note="'+ _i +'"><span>' + day++ + '</span>'+the_list+'</td>');
                 }
               }
             }
@@ -175,17 +180,14 @@ function calendar_show_content_2(_t){
   const note_id = $(_t).data('note')
   
   if(note_id != 'no'){
-    const the_target = notice[note_id].desc
     $('.c-event-calendar__no-note').hide()
     $('.c-event-calendar__has-note').fadeIn(500)
     // Replace the data
-    $('#date_earn').html(the_target.earn)
-    $('#date_pairs').html(the_target.pairs.lunch + the_target.pairs.dinner)
-    $('#date_pairs_lunch').html(the_target.pairs.lunch)
-    $('#date_pairs_dinner').html(the_target.pairs.dinner)
-    $('#date_people').html(the_target.people.lunch + the_target.people.dinner)
-    $('#date_people_lunch').html(the_target.people.lunch)
-    $('#date_people_dinner').html(the_target.people.dinner)
+    let list_data=''
+    for(let check = 0; check < Object.values(notice[note_id].items).length; check++){
+      list_data += '<li><p><span>'+notice[note_id].items[check].from+'</span> - <span>'+notice[note_id].items[check].to+'</span></p><p>'+notice[note_id].items[check].staff+'</p><p><span class="tag '+notice[note_id].items[check].background+'">'+notice[note_id].items[check].labels+'</span></p></li>'
+    }
+    $('.c-event-calendar__has-note--2 ul').html(list_data)
   }else{
     $('.c-event-calendar__has-note').hide()
     $('.c-event-calendar__no-note').fadeIn(500)

@@ -1,0 +1,72 @@
+.p-myShift{
+    &__menu{
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        ul{
+            width: 90%;
+            display: flex;
+            align-items: baseline;
+            justify-content: flex-end;
+            li{
+                width: 25%;
+                &:not(:last-child){
+                    margin-right: 2%;
+                }
+                a{
+                    display: block;
+                    max-width: 150px;
+                    color: #ff572f;
+                    border: 1px solid #ff572f;
+                    text-align: center;
+                    border-radius: 20px;
+                    font-size: 1.2rem;
+                    &.active{
+                        background-color: #ff572f;
+                        color: white;
+                    }
+                }
+            }
+            
+        }
+    }
+    &__setting{
+        width: 7%;
+        a{
+            display: block;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &__table{
+        position: relative;
+    }
+    &__btn{
+        display: flex;
+        position: absolute;
+        top: -6px;
+        left: 0;
+        button{
+            border: 2px solid #d8d8d8;
+            padding: 3px;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            color: #7f7f7f;
+            &:first-child{
+                border-radius: 5px 0 0 5px;
+                border-right-width: 1px;
+            }
+            &:last-child{
+                border-radius: 0 5px 5px 0;
+                border-left-width: 1px;
+            }
+            &.is_active{
+                background-color: #a5a5a5;
+                color: white;
+            }
+        }
+    }
+}
