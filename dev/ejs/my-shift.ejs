@@ -19,13 +19,13 @@
             </div>
             <ul>
                 <li>
-                    <a href="#" class="active">シフト提出</a>
+                    <a href="#" class="active">マイシフト</a>
                 </li>
                 <li>
-                    <a href="#">シフト提出</a>
+                    <a href="#">スタッフ</a>
                 </li>
                 <li>
-                    <a href="#">シフト提出</a>
+                    <a href="/shift-setting.html">シフト提出</a>
                 </li>
             </ul>
         </section>
@@ -35,71 +35,71 @@
                 <button>週</button>
             </div>
             <h2 class="c-event-calendar__table-title">2022</span>年<span class="js-month">4</span>月</h3>
-            <table class="c-event-calendar__table js-table"></table>
-            <div class="c-event-calendar__infor">
-                <div class="c-event-calendar__content c-event-calendar__content--show">
-                    <div class="c-event-calendar__head">
-                        <div class="container">
-                            <h3>2021年 4月6日 (火)</h3>
+                <table class="c-event-calendar__table js-table"></table>
+                <div class="c-event-calendar__infor">
+                    <div class="c-event-calendar__content c-event-calendar__content--show">
+                        <div class="c-event-calendar__head">
+                            <div class="container">
+                                <h3>2021年 4月6日 (火)</h3>
+                            </div>
+                        </div>
+                        <div class="c-event-calendar__has-note c-event-calendar__has-note--2">
+                            <div class="container">
+                                <ul>
+                                    <li>
+                                        <p><span>17:00</span> - <span>23:00</span></p>
+                                        <p>鈴木</p>
+                                        <p><span class="tag yellow">ホール</span></p>
+                                    </li>
+                                    <li>
+                                        <p><span>17:00</span> - <span>23:00</span></p>
+                                        <p>鈴木</p>
+                                        <p><span class="tag blue">キッチン</span></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="c-event-calendar__no-note">
+                            <div class="container">
+                                <a href="add-daily-note.html"><i class="fa-solid fa-circle-plus"></i>日報を入力する</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="c-event-calendar__has-note c-event-calendar__has-note--2">
-                        <div class="container">
-                            <ul>
-                                <li>
-                                    <p><span>17:00</span> - <span>23:00</span></p>
-                                    <p>鈴木</p>
-                                    <p><span class="tag yellow">ホール</span></p>
-                                </li>
-                                <li>
-                                    <p><span>17:00</span> - <span>23:00</span></p>
-                                    <p>鈴木</p>
-                                    <p><span class="tag blue">キッチン</span></p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="c-event-calendar__no-note">
-                        <div class="container">
-                            <a href="add-daily-note.html"><i class="fa-solid fa-circle-plus"></i>日報を入力する</a>
-                        </div>
-                    </div>
-                </div> 
-            </div>
+                </div>
         </section>
     </main>
-<!--▲ Content are ▲-->
-<%- include('inc/_footer'); %>
-<script>
-    // --- Add note for date ---
-    var notice = [{
-        date: "2022年4月10日",
-        items:[{
-            labels: 'ホール',
-            background: 'yellow',
-            from: '17:00',
-            to: '23:00',
-            staff: '鈴木'
-        }]
-    },{
-        date: "2022年4月21日",
-        items:[{
-            labels: 'ホール',
-            background: 'yellow',
-            from: '08:00',
-            to: '17:20',
-            staff: 'Test'
-        },{
-            labels: 'キッチン',
-            background: 'blue',
-            from: '10:00',
-            to: '19:00',
-            staff: '鈴木'
-        }]
-    }]
+    <!--▲ Content are ▲-->
+    <%- include('inc/_footer'); %>
+        <script>
+            // --- Add note for date ---
+            var notice = [{
+                date: "2022年4月10日",
+                items: [{
+                    labels: 'ホール',
+                    background: 'yellow',
+                    from: '17:00',
+                    to: '23:00',
+                    staff: '鈴木'
+                }]
+            }, {
+                date: "2022年4月21日",
+                items: [{
+                    labels: 'ホール',
+                    background: 'yellow',
+                    from: '08:00',
+                    to: '17:20',
+                    staff: 'Test'
+                }, {
+                    labels: 'キッチン',
+                    background: 'blue',
+                    from: '10:00',
+                    to: '19:00',
+                    staff: '鈴木'
+                }]
+            }]
 
-// ---------
-$(document).ready(function () {
-    js_calendar(2)
-})
-</script>
+            // ---------
+            $(document).ready(function() {
+                js_calendar(2)
+            })
+        </script>

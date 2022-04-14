@@ -35,6 +35,9 @@
         margin-top: 15px;
         display: block;
         color: $pink-bold;
+        &:hover {
+            color: $pink-bold;
+        }
     }
     &__item {
         margin-bottom: 10px;

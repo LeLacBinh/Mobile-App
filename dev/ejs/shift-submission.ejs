@@ -12,9 +12,10 @@
     <!--▼ Content area ▼-->
     <main class="p-shiftSetting">
         <div class="c-shiftmission">
+            <div class="c-shiftmission__header">
+                <p id="date-top"></p>
+            </div>
             <form action="#">
-
-
                 <div class="c-shiftmission__body">
                     <table class="c-table" id="list">
 
@@ -40,15 +41,26 @@
                 return new Date(year, month, 0).getDate();
             }
 
-            const date = new Date();
-            const currentYear = date.getFullYear();
-            const currentMonth = date.getMonth() + 1; // 👈️ months are 0-based
-
+            let date = new Date();
+            let currentYear = date.getFullYear();
+            let currentMonth = date.getMonth() + 1; // 👈️ months are 0-based
+            if (currentMonth < 10) {
+                currentMonth = '0' + currentMonth;
+            }
+            var dateTop = `${currentYear}<span>年</span>${currentMonth}<span>月</span>`;
+            console.log(dateTop);
+            $('#date-top').html(dateTop);
             // 👇️ Current Month
-            const daysInCurrentMonth = getDaysInMonth(currentYear, currentMonth);
+            let daysInCurrentMonth = getDaysInMonth(currentYear, currentMonth);
             var data = '';
             for (let index = 1; index <= daysInCurrentMonth; index++) {
+
+                console.log(currentMonth);
+                if (index < 10) {
+                    index = '0' + index;
+                }
                 var now = `${currentYear}-${currentMonth}-${index}`;
+
 
                 var day = getDayOfWeek(now);
                 data += `

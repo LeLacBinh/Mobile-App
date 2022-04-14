@@ -6,6 +6,9 @@
     padding: 15px 15px;
     font-weight: bold;
     text-align: center;
+    &:hover {
+        color: #fff;
+    }
     &.is-alert {
         &::after {
             content: "";
@@ -22,6 +25,7 @@
         margin-top: 15px;
     }
     &--orange {
+        letter-spacing: .2em;
         border-radius: 4px;
         padding: 8px;
         border: 2px solid #cecece;
@@ -42,6 +46,9 @@
         border: 2px solid $pink;
         background-color: #fff;
         color: $pink;
+        &:hover {
+            color: $pink;
+        }
     }
     &--red {
         border: 2px solid transparent;
@@ -109,5 +116,14 @@
     a,
     input[type=submit] {
         display: block;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .c-btn--orange {
+        border-radius: 4px;
+        padding: 15px;
+        
+        font-size: 1.6rem;
     }
 }

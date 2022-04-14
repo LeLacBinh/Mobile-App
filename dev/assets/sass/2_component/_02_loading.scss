@@ -20,9 +20,10 @@
         }
     }
     &__logo{
+        bottom: 15%;
         position: absolute;
         left: 50%;
-        bottom: 30px;
+   
         transform: translateX(-50%);
         max-width: 20%;
         img{
