@@ -24,7 +24,8 @@
         left: 50%;
         bottom: 30px;
         transform: translateX(-50%);
-        max-width: 20%;
+        width: 20%;
+        max-width: 150px;
         img{
             -webkit-animation-name: spinner; 
             -webkit-animation-timing-function: linear; 
