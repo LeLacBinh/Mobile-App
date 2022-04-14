@@ -1,0 +1,26 @@
+.c-shiftsetting {
+    padding: 4%;
+    &__header {
+        margin-bottom: 30px;
+    }
+    &__item {
+        border-top: 2px solid #d8d8d8;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.6rem;
+        &:first-child {
+            border-top-width: 0;
+        }
+    }
+    &__footer {
+        margin-top: 20px;
+        text-align: center;
+    }
+    &__btn {
+        border: 1px solid #a5a5a5;
+        border-radius: 4px;
+        font-size: 1.4rem;
+        padding: 10px 25px;
+    }
+}

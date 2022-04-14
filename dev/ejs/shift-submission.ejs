@@ -1,0 +1,68 @@
+<%- include('inc/_headerv2'); %>
+    <!--▼ Header ▼-->
+    <header class="c-headerv2" id="the_header">
+        <a href="javascript:history.back()" class="c-headerv2__back">
+            <i class="fa-solid fa-angle-left"></i>
+        </a>
+        <h1>
+            シフト設定
+        </h1>
+    </header>
+    <!--▲ Header ▲-->
+    <!--▼ Content area ▼-->
+    <main class="p-shiftSetting">
+        <div class="c-shiftmission">
+            <form action="#">
+
+
+                <div class="c-shiftmission__body">
+                    <table class="c-table" id="list">
+
+                    </table>
+                </div>
+                <div class="c-footerbtn">
+                    <input type="submit" class="c-btn c-btn--orange" value="申請する">
+                </div>
+            </form>
+        </div>
+    </main>
+    <!--▲ Content are ▲-->
+    <%- include('inc/_footerv2'); %>
+
+        <script>
+            // Accepts a Date object or date string that is recognized by the Date.parse() method
+            function getDayOfWeek(date) {
+                const dayOfWeek = new Date(date).getDay();
+                return isNaN(dayOfWeek) ? null : ['(日)', '(月)', '(火)', '(水)', '(木)', '(金)', '(土)'][dayOfWeek];
+            }
+
+            function getDaysInMonth(year, month) {
+                return new Date(year, month, 0).getDate();
+            }
+
+            const date = new Date();
+            const currentYear = date.getFullYear();
+            const currentMonth = date.getMonth() + 1; // 👈️ months are 0-based
+
+            // 👇️ Current Month
+            const daysInCurrentMonth = getDaysInMonth(currentYear, currentMonth);
+            var data = '';
+            for (let index = 1; index <= daysInCurrentMonth; index++) {
+                var now = `${currentYear}-${currentMonth}-${index}`;
+
+                var day = getDayOfWeek(now);
+                data += `
+                    <tr>
+                        <th>
+                            <span >${index}</span><br>
+                            ${day}
+                            </th>
+                        <td>
+                            <input type="text" name="" id="" class="c-shiftmission__input">
+                            <input type="text" name="" id="" class="c-shiftmission__input">
+                        </td>
+                    </tr>
+                `;
+            }
+            $('#list').html(data);
+        </script>

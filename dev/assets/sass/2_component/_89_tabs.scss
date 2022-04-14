@@ -3,7 +3,21 @@
     overflow-x: scroll;
     overflow-y: hidden;
     padding: 0 5px;
+    padding-top: 15px;
     border-bottom: 1px solid #a5a5a5;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
     .nav-link {
         min-height: 40px;
         padding: 0;
