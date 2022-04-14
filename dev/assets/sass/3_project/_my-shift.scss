@@ -11,12 +11,12 @@
             justify-content: flex-end;
             li{
                 width: 25%;
+                max-width: 150px;
                 &:not(:last-child){
-                    margin-right: 2%;
+                    margin-right: 5px;
                 }
                 a{
                     display: block;
-                    max-width: 150px;
                     color: #ff572f;
                     border: 1px solid #ff572f;
                     text-align: center;
